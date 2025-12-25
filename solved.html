@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Solved Problems</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>All Solved Problems</h2>
+  <ul id="solved-list"></ul>
+  <script>
+  fetch("./data/state.json")
+    .then(r => r.json())
+    .then(state => {
+      const ul = document.getElementById("solved-list");
+      const allSolved = [];
+
+      Object.values(state.assigned).forEach(dayProblems => {
+        dayProblems.forEach(p => {
+          if (p.status === "solved") allSolved.push(p);
+        });
+      });
+
+      if (!allSolved.length) {
+        ul.innerHTML = "<li>No solved problems yet</li>";
+        return;
+      }
+
+      allSolved.forEach(p => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+          <a href="https://leetcode.com/problems/${p.slug}" target="_blank">
+            ${p.title} (${p.difficulty})
+          </a>
+        `;
+        ul.appendChild(li);
+      });
+    });
+  </script>
+</body>
+</html>
+

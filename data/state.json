@@ -1,0 +1,78 @@
+{
+  "assigned": {
+    "2025-12-25": [
+      {
+        "slug": "minimum-operations-to-make-the-array-increasing",
+        "title": "Minimum Operations to Make the Array Increasing",
+        "difficulty": "Easy",
+        "status": "solved",
+        "revision": false
+      },
+      {
+        "slug": "custom-sort-string",
+        "title": "Custom Sort String",
+        "difficulty": "Medium",
+        "status": "solved",
+        "revision": false
+      },
+      {
+        "slug": "can-you-eat-your-favorite-candy-on-your-favorite-day",
+        "title": "Can You Eat Your Favorite Candy on Your Favorite Day?",
+        "difficulty": "Medium",
+        "status": "solved",
+        "revision": false
+      },
+      {
+        "slug": "maximum-product-of-the-length-of-two-palindromic-substrings",
+        "title": "Maximum Product of the Length of Two Palindromic Substrings",
+        "difficulty": "Hard",
+        "status": "pending",
+        "revision": false
+      },
+      {
+        "slug": "arranging-coins",
+        "title": "Arranging Coins",
+        "difficulty": "Easy",
+        "status": "solved",
+        "revision": false
+      },
+      {
+        "slug": "find-the-encrypted-string",
+        "title": "Find the Encrypted String",
+        "difficulty": "Easy",
+        "status": "solved",
+        "revision": false
+      },
+      {
+        "slug": "middle-of-the-linked-list",
+        "title": "Middle of the Linked List",
+        "difficulty": "Easy",
+        "status": "pending",
+        "revision": false
+      },
+      {
+        "slug": "mirror-distance-of-an-integer",
+        "title": "Mirror Distance of an Integer",
+        "difficulty": "Easy",
+        "status": "pending",
+        "revision": false
+      },
+      {
+        "slug": "paint-house-iv",
+        "title": "Paint House IV",
+        "difficulty": "Medium",
+        "status": "pending",
+        "revision": false
+      },
+      {
+        "slug": "clone-graph",
+        "title": "Clone Graph",
+        "difficulty": "Medium",
+        "status": "pending",
+        "revision": false
+      }
+    ]
+  }
+}
+
+
