@@ -27,7 +27,8 @@
         "title": "Maximum Product of the Length of Two Palindromic Substrings",
         "difficulty": "Hard",
         "status": "pending",
-        "revision": false
+        "revision": false,
+        "solve_later": true
       },
       {
         "slug": "arranging-coins",
@@ -74,5 +75,3 @@
     ]
   }
 }
-
-
