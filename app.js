@@ -3,27 +3,39 @@ const page = window.location.pathname;
 
 fetch("data/state.json")
   .then(r => r.json())
-  .then(data => render(data));
+  .then(state => render(state));
 
 function render(state) {
   const list = document.getElementById("problem-list");
+  const main = document.querySelector("main");
+
   let problems = state.problems;
 
   if (page.includes("solved.html")) {
     problems = problems.filter(p => p.status === "solved");
-  } else if (page.includes("solve-later.html")) {
+    addSubtitle(main, `${problems.length} problems solved`);
+  }
+  else if (page.includes("solve-later.html")) {
     problems = problems.filter(p => p.solve_later === true);
-  } else {
+    addSubtitle(main, `${problems.length} problems marked for later`);
+  }
+  else {
     problems = problems.filter(
       p =>
         p.status === "pending" &&
         p.assigned_on === today &&
         !p.solve_later
     );
+    addSubtitle(main, `${problems.length} problems for today`);
   }
 
   if (problems.length === 0) {
-    list.innerHTML = "<p>No problems here 🎉</p>";
+    list.innerHTML = `
+      <div class="empty">
+        Nothing here yet 🚀<br />
+        Run generate.py or mark problems for today.
+      </div>
+    `;
     return;
   }
 
@@ -36,8 +48,10 @@ function render(state) {
         <a href="https://leetcode.com/problems/${p.slug}/" target="_blank">
           ${p.title}
         </a>
-        <span class="badge">${p.difficulty}</span>
-        <span class="badge">Slug: ${p.slug}</span>
+        <div class="meta">
+          <span class="badge ${p.difficulty.toLowerCase()}">${p.difficulty}</span>
+          <span>Slug: ${p.slug}</span>
+        </div>
       </div>
       <div class="actions">
         <button onclick="copySlug('${p.slug}')">Copy Slug</button>
@@ -48,9 +62,30 @@ function render(state) {
   });
 }
 
+function addSubtitle(main, text) {
+  const sub = document.createElement("div");
+  sub.className = "subtitle";
+  sub.innerText = text;
+  main.insertBefore(sub, document.getElementById("problem-list"));
+}
+
+/* ===== TOAST ===== */
 function copySlug(slug) {
-  navigator.clipboard.writeText(slug).then(() => {
-    alert(`Copied: ${slug}`);
-  });
+  navigator.clipboard.writeText(slug);
+  showToast(`Copied slug: ${slug}`);
+}
+
+function showToast(text) {
+  let toast = document.querySelector(".toast");
+  if (!toast) {
+    toast = document.createElement("div");
+    toast.className = "toast";
+    document.body.appendChild(toast);
+  }
+
+  toast.innerText = text;
+  toast.classList.add("show");
+
+  setTimeout(() => toast.classList.remove("show"), 2000);
 }
 
