@@ -3,20 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <title>Solve Later</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <nav>
-    <a href="index.html">Today</a>
-    <a href="solved.html">Solved</a>
-    <a href="solve-later.html">Solve Later</a>
+  <nav class="navbar">
+    <div class="nav-left">LeetCode Auto</div>
+    <div class="nav-links">
+      <a href="index.html">Today</a>
+      <a href="solved.html">Solved</a>
+      <a href="solve-later.html" class="active">Solve Later</a>
+    </div>
   </nav>
 
-  <main>
-    <h1>Solve Later</h1>
+  <main class="container">
+    <h1 id="page-title">Solve Later</h1>
+    <p id="page-subtitle" class="subtitle"></p>
+
     <div id="problem-list"></div>
   </main>
 
+  <div id="toast" class="toast"></div>
   <script src="app.js"></script>
 </body>
 </html>

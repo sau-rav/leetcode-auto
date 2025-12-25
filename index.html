@@ -3,19 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <title>Today's LeetCode Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <nav>
-    <a href="index.html">Today</a>
-    <a href="solved.html">Solved</a>
-    <a href="solve-later.html">Solve Later</a>
+  <nav class="navbar">
+    <div class="nav-left">LeetCode Auto</div>
+    <div class="nav-links">
+      <a href="index.html" class="active">Today</a>
+      <a href="solved.html">Solved</a>
+      <a href="solve-later.html">Solve Later</a>
+    </div>
   </nav>
 
-  <main>
-    <h1>Today's Problems</h1>
+  <main class="container">
+    <h1 id="page-title">Today's Problems</h1>
+    <p id="page-subtitle" class="subtitle"></p>
+
+    <!-- THIS DIV IS REQUIRED -->
     <div id="problem-list"></div>
   </main>
+
+  <!-- TOAST -->
+  <div id="toast" class="toast"></div>
 
   <script src="app.js"></script>
 </body>

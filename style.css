@@ -1,150 +1,120 @@
-:root {
-  --bg: #f6f8fa;
-  --card: #ffffff;
-  --border: #e5e7eb;
-  --text: #1f2937;
-  --muted: #6b7280;
-  --easy: #16a34a;
-  --medium: #f59e0b;
-  --hard: #dc2626;
-  --primary: #111827;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: var(--bg);
-  color: var(--text);
+  background: #f6f8fa;
+  color: #1f2937;
 }
 
-/* ===== NAVBAR ===== */
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: var(--primary);
+/* NAVBAR */
+.navbar {
+  background: #111827;
+  color: white;
   padding: 14px 24px;
   display: flex;
-  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav a {
-  color: #e5e7eb;
+.nav-links a {
+  color: #d1d5db;
   text-decoration: none;
+  margin-left: 18px;
   font-weight: 500;
 }
 
-nav a:hover {
-  color: #ffffff;
+.nav-links a.active,
+.nav-links a:hover {
+  color: white;
 }
 
-/* ===== MAIN ===== */
-main {
+/* MAIN */
+.container {
   max-width: 900px;
   margin: 32px auto;
   padding: 0 20px;
 }
 
-h1 {
-  margin-bottom: 6px;
-}
-
 .subtitle {
-  color: var(--muted);
-  margin-bottom: 24px;
+  color: #6b7280;
+  margin-bottom: 20px;
 }
 
-/* ===== PROBLEM CARD ===== */
+/* CARD */
 .problem {
-  background: var(--card);
-  border: 1px solid var(--border);
+  background: white;
   border-radius: 10px;
-  padding: 16px 18px;
+  padding: 16px;
   margin-bottom: 14px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  border: 1px solid #e5e7eb;
 }
 
-.problem-info {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.problem-info a {
-  font-size: 16px;
+.problem-title {
   font-weight: 600;
+  font-size: 16px;
   color: #0969da;
   text-decoration: none;
 }
 
-.problem-info a:hover {
+.problem-title:hover {
   text-decoration: underline;
 }
 
 .meta {
+  margin-top: 6px;
+  font-size: 13px;
   display: flex;
   gap: 10px;
   align-items: center;
-  font-size: 13px;
-  color: var(--muted);
 }
 
-/* ===== BADGES ===== */
 .badge {
   padding: 4px 10px;
   border-radius: 999px;
   font-size: 12px;
-  font-weight: 600;
   color: white;
+  font-weight: 600;
 }
 
-.badge.easy { background: var(--easy); }
-.badge.medium { background: var(--medium); }
-.badge.hard { background: var(--hard); }
+.easy { background: #16a34a; }
+.medium { background: #f59e0b; }
+.hard { background: #dc2626; }
 
-/* ===== ACTIONS ===== */
 .actions button {
   padding: 6px 12px;
   border-radius: 8px;
-  border: 1px solid var(--border);
+  border: 1px solid #d1d5db;
   background: #f9fafb;
   cursor: pointer;
-  font-size: 13px;
 }
 
 .actions button:hover {
   background: #f3f4f6;
 }
 
-/* ===== EMPTY STATE ===== */
+/* EMPTY */
 .empty {
-  background: #ffffff;
-  border: 1px dashed var(--border);
-  border-radius: 10px;
+  background: white;
+  border: 1px dashed #d1d5db;
   padding: 32px;
+  border-radius: 10px;
   text-align: center;
-  color: var(--muted);
+  color: #6b7280;
 }
 
-/* ===== TOAST ===== */
+/* TOAST */
 .toast {
   position: fixed;
   bottom: 24px;
   right: 24px;
   background: #111827;
-  color: #fff;
+  color: white;
   padding: 12px 16px;
   border-radius: 8px;
   opacity: 0;
   transform: translateY(10px);
-  transition: all 0.25s ease;
+  transition: 0.25s;
 }
 
 .toast.show {
