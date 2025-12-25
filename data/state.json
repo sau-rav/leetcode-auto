@@ -1,7 +1,8 @@
 {
   "meta": {
     "initialized_on": "2025-12-26",
-    "total_problems": 3040
+    "total_problems": 3040,
+    "last_generated_on": "2025-12-25"
   },
   "problems": [
     {
@@ -2927,7 +2928,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-25"
     },
     {
       "slug": "rotate-function",
@@ -3257,10 +3258,11 @@
       "slug": "arranging-coins",
       "title": "Arranging Coins",
       "difficulty": "Easy",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2025-12-25"
     },
     {
       "slug": "find-all-duplicates-in-an-array",
@@ -4772,7 +4774,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-25"
     },
     {
       "slug": "image-smoother",
@@ -5741,10 +5743,11 @@
       "slug": "custom-sort-string",
       "title": "Custom Sort String",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2025-12-25"
     },
     {
       "slug": "number-of-matching-subsequences",
@@ -7409,7 +7412,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-25"
     },
     {
       "slug": "longest-turbulent-subarray",
@@ -9245,7 +9248,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-25"
     },
     {
       "slug": "find-winner-on-a-tic-tac-toe-game",
@@ -12734,10 +12737,11 @@
       "slug": "can-you-eat-your-favorite-candy-on-your-favorite-day",
       "title": "Can You Eat Your Favorite Candy on Your Favorite Day?",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2025-12-25"
     },
     {
       "slug": "palindrome-partitioning-iv",
@@ -13319,10 +13323,11 @@
       "slug": "minimum-operations-to-make-the-array-increasing",
       "title": "Minimum Operations to Make the Array Increasing",
       "difficulty": "Easy",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2025-12-25"
     },
     {
       "slug": "queries-on-number-of-points-inside-a-circle",
@@ -23003,10 +23008,11 @@
       "slug": "find-the-encrypted-string",
       "title": "Find the Encrypted String",
       "difficulty": "Easy",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2025-12-25"
     },
     {
       "slug": "generate-binary-strings-without-adjacent-zeros",
@@ -27074,7 +27080,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-25"
     },
     {
       "slug": "total-waviness-of-numbers-in-range-i",
