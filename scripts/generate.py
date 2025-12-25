@@ -5,9 +5,9 @@ import random
 from datetime import datetime, date
 from collections import defaultdict
 
+# ---------------- CONFIG ----------------
 LEETCODE_USER = "saurav_ksharma"
 SOLVED_AFTER = datetime(2025, 12, 25)
-
 STATE_FILE = "data/state.json"
 GRAPHQL = "https://leetcode.com/graphql"
 
@@ -22,6 +22,7 @@ HEADERS = {
 os.makedirs("data", exist_ok=True)
 
 
+# ---------------- HELPERS ----------------
 def graphql(query, variables=None):
     r = requests.post(
         GRAPHQL,
@@ -45,6 +46,7 @@ def save_state(state):
         json.dump(state, f, indent=2)
 
 
+# ---------------- LEETCODE DATA ----------------
 def fetch_recent_solved():
     query = """
     query recentAc($username: String!) {
@@ -56,12 +58,10 @@ def fetch_recent_solved():
     """
     data = graphql(query, {"username": LEETCODE_USER})
     solved = set()
-
     for s in data["recentAcSubmissionList"]:
         ts = datetime.fromtimestamp(int(s["timestamp"]))
         if ts >= SOLVED_AFTER:
             solved.add(s["titleSlug"])
-
     return solved
 
 
@@ -85,13 +85,11 @@ def fetch_free_problems():
     """
     skip, limit = 0, 100
     free = []
-
     while True:
         data = graphql(query, {"skip": skip, "limit": limit})
         batch = data["questionList"]["data"]
         if not batch:
             break
-
         for q in batch:
             if not q["isPaidOnly"]:
                 free.append({
@@ -100,52 +98,56 @@ def fetch_free_problems():
                     "difficulty": q["difficulty"]
                 })
         skip += limit
-
     return free
 
 
+# ---------------- MAIN ----------------
 def run():
     today = date.today().isoformat()
     state = load_state()
+    state.setdefault(today, [])
 
     solved_recent = fetch_recent_solved()
 
+    # Auto-mark solved problems
     for problems in state["assigned"].values():
         for p in problems:
             if p["status"] == "pending" and p["slug"] in solved_recent:
                 p["status"] = "solved"
                 p.setdefault("revision", False)
 
-    pending = []
-    solved_slugs = set()
-    revision_slugs = set()
-    pending_count = defaultdict(int)
+    # Count existing pending for today
+    existing_today_slugs = {p['slug'] for p in state[today] if p['status'] == 'pending'}
+    pending_today_count = len(existing_today_slugs)
 
-    for problems in state["assigned"].values():
-        for p in problems:
-            if p["status"] == "pending":
-                pending.append(p)
-                pending_count[p["difficulty"]] += 1
-            else:
-                solved_slugs.add(p["slug"])
-                if p.get("revision"):
-                    revision_slugs.add(p["slug"])
+    # Skip adding new if already have DAILY_TARGET pending
+    if pending_today_count >= DAILY_TARGET:
+        save_state(state)
+        print(f"{DAILY_TARGET} problems already assigned today. Nothing new added.")
+        return
 
+    # Fetch all problems
     free = fetch_free_problems()
     buckets = defaultdict(list)
 
+    # Prepare buckets by difficulty
     for p in free:
-        if ((p["slug"] not in solved_slugs or p["slug"] in revision_slugs)
+        if ((p["slug"] not in existing_today_slugs and p["slug"] not in solved_recent)
             and not p.get("solve_later", False)):
             buckets[p["difficulty"]].append(p)
 
     for d in buckets:
         random.shuffle(buckets[d])
 
+    # Select new problems according to difficulty quota
     new = []
+    pending_count_by_diff = defaultdict(int)
+    for p in state[today]:
+        if p["status"] == "pending":
+            pending_count_by_diff[p["difficulty"]] += 1
 
     for diff, quota in DIFFICULTY_QUOTA.items():
-        need = max(0, quota - pending_count[diff])
+        need = max(0, quota - pending_count_by_diff[diff])
         while need > 0 and buckets[diff]:
             q = buckets[diff].pop()
             new.append({
@@ -158,7 +160,8 @@ def run():
             })
             need -= 1
 
-    while len(pending) + len(new) < DAILY_TARGET:
+    # Fill remaining slots to reach DAILY_TARGET
+    while len(new) + pending_today_count < DAILY_TARGET:
         for diff in ["Easy", "Medium", "Hard"]:
             if buckets[diff]:
                 q = buckets[diff].pop()
@@ -172,10 +175,11 @@ def run():
                 })
                 break
         else:
-            break
+            break  # no more free problems
 
-    state["assigned"].setdefault(today, []).extend(new)
+    state[today].extend(new)
     save_state(state)
+    print(f"Assigned {len(new)} new problems today.")
 
 
 if __name__ == "__main__":
