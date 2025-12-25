@@ -1,34 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Today's LeetCode Problems</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    li { margin-bottom: 10px; }
+    button { margin-left: 10px; }
+    nav a { margin-right: 15px; }
+  </style>
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="nav-left">LeetCode Auto</div>
-    <div class="nav-links">
-      <a href="index.html" class="active">Today</a>
-      <a href="solved.html">Solved</a>
-      <a href="solve-later.html">Solve Later</a>
-    </div>
+  <h1>Today's LeetCode Problems</h1>
+
+  <nav>
+    <a href="index.html">Today</a>
+    <a href="solved.html">Solved Problems</a>
+    <a href="solve_later.html">Solve Later Problems</a>
   </nav>
 
-  <main class="container">
-    <h1 id="page-title">Today's Problems</h1>
-    <p id="page-subtitle" class="subtitle"></p>
+  <ul id="list"></ul>
 
-    <!-- THIS DIV IS REQUIRED -->
-    <div id="problem-list"></div>
-  </main>
+  <script>
+    const today = new Date().toISOString().split("T")[0];
 
-  <!-- TOAST -->
-  <div id="toast" class="toast"></div>
+    fetch("./data/state.json")
+      .then(r => r.json())
+      .then(state => {
+        const list = document.getElementById("list");
 
-  <script src="app.js"></script>
+        const problems = state.problems.filter(p =>
+          p.status === "pending" &&
+          !p.solve_later &&
+          p.assigned_on === today
+        );
+
+        if (!problems.length) {
+          list.innerHTML = "<li>No new problems pending today</li>";
+          return;
+        }
+
+        problems.forEach(p => {
+          const li = document.createElement("li");
+
+          const copyBtn = document.createElement("button");
+          copyBtn.textContent = "Copy Slug";
+          copyBtn.onclick = () => {
+            navigator.clipboard.writeText(p.slug).then(() => {
+              copyBtn.textContent = "Copied!";
+              setTimeout(() => copyBtn.textContent = "Copy Slug", 1000);
+            });
+          };
+
+          li.innerHTML = `
+            <a href="https://leetcode.com/problems/${p.slug}" target="_blank">
+              ${p.title}
+            </a>
+            <code>(${p.slug})</code>
+            - ${p.difficulty}
+            - <strong>${p.status}</strong>
+          `;
+
+          li.appendChild(copyBtn);
+          list.appendChild(li);
+        });
+      });
+  </script>
 </body>
 </html>
 
