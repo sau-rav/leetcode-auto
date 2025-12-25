@@ -5,29 +5,28 @@ import random
 from datetime import datetime, date
 from collections import defaultdict
 
-# ---------------- CONFIG ----------------
+# ================= CONFIG =================
 LEETCODE_USER = "saurav_ksharma"
 SOLVED_AFTER = datetime(2025, 12, 25)
+
 STATE_FILE = "data/state.json"
 GRAPHQL = "https://leetcode.com/graphql"
 
-DIFFICULTY_QUOTA = {"Easy": 2, "Medium": 2, "Hard": 1}
 DAILY_TARGET = 5
+DIFFICULTY_QUOTA = {"Easy": 2, "Medium": 2, "Hard": 1}
 
 HEADERS = {
     "Content-Type": "application/json",
     "User-Agent": "Mozilla/5.0"
 }
+# ==========================================
 
-os.makedirs("data", exist_ok=True)
 
-
-# ---------------- HELPERS ----------------
-def graphql(query, variables=None):
+def graphql(query, variables):
     r = requests.post(
         GRAPHQL,
         headers=HEADERS,
-        json={"query": query, "variables": variables or {}},
+        json={"query": query, "variables": variables},
         timeout=20
     )
     r.raise_for_status()
@@ -35,8 +34,6 @@ def graphql(query, variables=None):
 
 
 def load_state():
-    if not os.path.exists(STATE_FILE):
-        return {"assigned": {}}
     with open(STATE_FILE) as f:
         return json.load(f)
 
@@ -46,155 +43,110 @@ def save_state(state):
         json.dump(state, f, indent=2)
 
 
+# -------- STEP 1: FETCH RECENT SOLVED --------
 def fetch_recent_solved():
     query = """
     query recentAc($username: String!) {
-      recentAcSubmissionList(username: $username, limit: 1000) {
+      recentAcSubmissionList(username: $username, limit: 100) {
         titleSlug
         timestamp
       }
     }
     """
     data = graphql(query, {"username": LEETCODE_USER})
+
     solved = set()
     for s in data["recentAcSubmissionList"]:
         ts = datetime.fromtimestamp(int(s["timestamp"]))
         if ts >= SOLVED_AFTER:
             solved.add(s["titleSlug"])
+
     return solved
 
 
-def fetch_free_problems():
-    query = """
-    query getQuestions($skip: Int!, $limit: Int!) {
-      questionList(
-        categorySlug: ""
-        skip: $skip
-        limit: $limit
-        filters: {}
-      ) {
-        data {
-          title
-          titleSlug
-          difficulty
-          isPaidOnly
-        }
-      }
-    }
-    """
-    skip, limit = 0, 100
-    free = []
-    while True:
-        data = graphql(query, {"skip": skip, "limit": limit})
-        batch = data["questionList"]["data"]
-        if not batch:
-            break
-        for q in batch:
-            if not q["isPaidOnly"]:
-                free.append({
-                    "slug": q["titleSlug"],
-                    "title": q["title"],
-                    "difficulty": q["difficulty"]
-                })
-        skip += limit
-    return free
-
-
-# ---------------- MAIN ----------------
+# -------- MAIN LOGIC --------
 def run():
     today = date.today().isoformat()
-    print(f"Running LeetCode problem generation for {today}...")
+    print(f"Running LeetCode problem generation for {today}")
 
     state = load_state()
+    problems = state["problems"]
+
+    # ---- 1. MARK SOLVED PROBLEMS ----
     solved_recent = fetch_recent_solved()
     print(f"Found {len(solved_recent)} problems solved since {SOLVED_AFTER.date()}")
 
-    # Auto-mark solved
-    updated_count = 0
-    for problems in state["assigned"].values():
-        for p in problems:
-            if p["status"] == "pending" and p["slug"] in solved_recent:
-                p["status"] = "solved"
-                p.setdefault("revision", False)
-                updated_count += 1
-    print(f"Marked {updated_count} problems as solved")
+    solved_count = 0
+    for p in problems:
+        if p["status"] == "pending" and p["slug"] in solved_recent:
+            p["status"] = "solved"
+            p["solved_on"] = today
+            p["assigned_on"] = None
+            solved_count += 1
 
-    # Count existing pending problems ignoring solve_later
-    pending = []
-    pending_count = defaultdict(int)
-    solved_slugs = set()
-    revision_slugs = set()
+    print(f"Marked {solved_count} problems as solved")
 
-    for problems in state["assigned"].values():
-        for p in problems:
-            if p["status"] == "pending" and not p.get("solve_later", False):
-                pending.append(p)
-                pending_count[p["difficulty"]] += 1
-            else:
-                solved_slugs.add(p["slug"])
-                if p.get("revision"):
-                    revision_slugs.add(p["slug"])
+    # ---- 2. COUNT CURRENT PENDING (EXCLUDING solve_later) ----
+    pending_today = [
+        p for p in problems
+        if p["status"] == "pending"
+        and p["assigned_on"] == today
+        and not p["solve_later"]
+    ]
 
-    print(f"Currently {len(pending)} pending problems (excluding solve_later)")
+    pending_by_diff = defaultdict(int)
+    for p in pending_today:
+        pending_by_diff[p["difficulty"]] += 1
 
-    # Fetch free problems
-    free = fetch_free_problems()
-    print(f"Fetched {len(free)} free problems from LeetCode")
+    print(f"Currently {len(pending_today)} pending problems (excluding solve_later)")
+
+    if len(pending_today) >= DAILY_TARGET:
+        print("Daily quota already satisfied")
+        save_state(state)
+        return
+
+    # ---- 3. ELIGIBLE POOL ----
+    pool = [
+        p for p in problems
+        if p["status"] == "pending"
+        and not p["solve_later"]
+        and p["assigned_on"] is None
+    ]
 
     buckets = defaultdict(list)
-    for p in free:
-        if ((p["slug"] not in solved_slugs or p["slug"] in revision_slugs)
-            and not p.get("solve_later", False)):
-            buckets[p["difficulty"]].append(p)
+    for p in pool:
+        buckets[p["difficulty"]].append(p)
 
     for d in buckets:
         random.shuffle(buckets[d])
-        print(f"{len(buckets[d])} free {d} problems available after filtering")
 
-    new = []
+    new_assigned = []
 
-    # Select problems based on quota
+    # ---- 4. DIFFICULTY BALANCING ----
     for diff, quota in DIFFICULTY_QUOTA.items():
-        need = max(0, quota - pending_count[diff])
+        need = max(0, quota - pending_by_diff[diff])
         while need > 0 and buckets[diff]:
             q = buckets[diff].pop()
-            new.append({
-                "slug": q["slug"],
-                "title": q["title"],
-                "difficulty": q["difficulty"],
-                "status": "pending",
-                "revision": False,
-                "solve_later": False
-            })
+            new_assigned.append(q)
             need -= 1
 
-    # Fill remaining if needed
-    while len(pending) + len(new) < DAILY_TARGET:
+    # ---- 5. FILL TO 5 ----
+    while len(new_assigned) + len(pending_today) < DAILY_TARGET:
         for diff in ["Easy", "Medium", "Hard"]:
             if buckets[diff]:
-                q = buckets[diff].pop()
-                new.append({
-                    "slug": q["slug"],
-                    "title": q["title"],
-                    "difficulty": q["difficulty"],
-                    "status": "pending",
-                    "revision": False,
-                    "solve_later": False
-                })
+                new_assigned.append(buckets[diff].pop())
                 break
         else:
             break
 
-    if new:
-        print(f"Assigning {len(new)} new problems today:")
-        for p in new:
-            print(f"- {p['title']} ({p['difficulty']})")
-    else:
-        print("No new problems available today (all free problems assigned or solved).")
+    # ---- 6. ASSIGN ----
+    for p in new_assigned:
+        p["assigned_on"] = today
 
-    state["assigned"].setdefault(today, []).extend(new)
+    state["meta"]["last_generated_on"] = today
     save_state(state)
-    print(f"Saved state.json with {len(state['assigned'].get(today, []))} problems for today")
+
+    print(f"Assigned {len(new_assigned)} new problems")
 
 
 if __name__ == "__main__":

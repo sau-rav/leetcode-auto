@@ -1,27 +1,34 @@
 import json
-import os
+import sys
+from datetime import date
 
 STATE_FILE = "data/state.json"
 
-if not os.path.exists(STATE_FILE):
-    raise FileNotFoundError(f"{STATE_FILE} not found")
+if len(sys.argv) < 2:
+    print("Usage: python mark_solved.py <slug>")
+    sys.exit(1)
 
-title_slug = os.environ["TITLE_SLUG"]
+slug = sys.argv[1]
+today = date.today().isoformat()
 
 with open(STATE_FILE) as f:
     state = json.load(f)
 
 found = False
-for day, problems in state["assigned"].items():
-    for p in problems:
-        if p["slug"] == title_slug:
-            p["solve_later"] = True
-            found = True
+for p in state["problems"]:
+    if p["slug"] == slug:
+        p["status"] = "solved"
+        p["solved_on"] = today
+        p["assigned_on"] = None
+        found = True
+        break
 
 if not found:
-    print(f"{title_slug} not found in state.json")
-else:
-    with open(STATE_FILE, "w") as f:
-        json.dump(state, f, indent=2)
-    print(f"{title_slug} marked as solve_later")
+    print("Problem not found")
+    sys.exit(1)
+
+with open(STATE_FILE, "w") as f:
+    json.dump(state, f, indent=2)
+
+print(f"Marked {slug} as solved")
 
