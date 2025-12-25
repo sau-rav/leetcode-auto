@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Solved Problems</title>
+  <title>Solve Later Problems</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 20px; }
     li { margin-bottom: 10px; }
@@ -10,7 +10,7 @@
   </style>
 </head>
 <body>
-  <h1>Solved Problems</h1>
+  <h1>Solve Later Problems</h1>
   <ul id="list"></ul>
 
   <script>
@@ -22,12 +22,12 @@
 
         Object.values(state.assigned).forEach(day => {
           day.forEach(p => {
-            if (p.status === "solved") problems.push(p);
+            if (p.solve_later) problems.push(p);
           });
         });
 
         if (!problems.length) {
-          list.innerHTML = "<li>No solved problems yet</li>";
+          list.innerHTML = "<li>No problems marked for Solve Later</li>";
           return;
         }
 
@@ -46,7 +46,7 @@
             <a href="https://leetcode.com/problems/${p.slug}" target="_blank">
               ${p.title}
             </a>
-            <code>(${p.slug})</code> - ${p.difficulty}
+            <code>(${p.slug})</code> - ${p.difficulty} - ${p.status}
           `;
           li.appendChild(copyBtn);
           list.appendChild(li);

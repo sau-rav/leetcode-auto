@@ -106,7 +106,6 @@ def run():
     print(f"Running LeetCode problem generation for {today}...")
 
     state = load_state()
-
     solved_recent = fetch_recent_solved()
     print(f"Found {len(solved_recent)} problems solved since {SOLVED_AFTER.date()}")
 
@@ -120,15 +119,15 @@ def run():
                 updated_count += 1
     print(f"Marked {updated_count} problems as solved")
 
-    # Count existing pending problems
+    # Count existing pending problems ignoring solve_later
     pending = []
+    pending_count = defaultdict(int)
     solved_slugs = set()
     revision_slugs = set()
-    pending_count = defaultdict(int)
 
     for problems in state["assigned"].values():
         for p in problems:
-            if p["status"] == "pending":
+            if p["status"] == "pending" and not p.get("solve_later", False):
                 pending.append(p)
                 pending_count[p["difficulty"]] += 1
             else:
@@ -136,7 +135,7 @@ def run():
                 if p.get("revision"):
                     revision_slugs.add(p["slug"])
 
-    print(f"Currently {len(pending)} pending problems")
+    print(f"Currently {len(pending)} pending problems (excluding solve_later)")
 
     # Fetch free problems
     free = fetch_free_problems()
