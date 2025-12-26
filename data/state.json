@@ -23792,8 +23792,8 @@
       "slug": "count-the-number-of-winning-sequences",
       "title": "Count The Number of Winning Sequences",
       "difficulty": "Hard",
-      "status": "solved",
-      "solve_later": false,
+      "status": "pending",
+      "solve_later": true,
       "revision": false,
       "assigned_on": null,
       "solved_on": "2025-12-26"
