@@ -23792,10 +23792,11 @@
       "slug": "count-the-number-of-winning-sequences",
       "title": "Count The Number of Winning Sequences",
       "difficulty": "Hard",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": "2025-12-26"
+      "assigned_on": null,
+      "solved_on": "2025-12-26"
     },
     {
       "slug": "find-x-sum-of-all-k-long-subarrays-ii",
