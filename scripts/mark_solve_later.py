@@ -17,9 +17,9 @@ with open(STATE_FILE) as f:
 found = False
 for p in state["problems"]:
     if p["slug"] == slug:
-        p["status"] = "solved"
-        p["solved_on"] = today
+        p["status"] = "pending"
         p["assigned_on"] = None
+        p["solve_later"] = true
         found = True
         break
 
