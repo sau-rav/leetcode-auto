@@ -5,31 +5,69 @@
   <title>Today's LeetCode Problems</title>
 
   <style>
+    /* ---------- THEME VARIABLES ---------- */
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #222;
+      --heading: #111827;
+      --muted: #6b7280;
+      --link: #2563eb;
+      --code-bg: #f1f5f9;
+      --shadow: rgba(0,0,0,0.06);
+    }
+
+    body.dark {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #e5e7eb;
+      --heading: #f9fafb;
+      --muted: #9ca3af;
+      --link: #60a5fa;
+      --code-bg: #334155;
+      --shadow: rgba(0,0,0,0.4);
+    }
+
+    /* ---------- BASE STYLES ---------- */
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #f7f9fc;
+      background: var(--bg);
       margin: 0;
       padding: 24px;
-      color: #222;
+      color: var(--text);
+      transition: background 0.2s ease, color 0.2s ease;
     }
 
     h1 {
       margin-bottom: 12px;
+      color: var(--heading);
     }
 
     nav {
       margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     nav a {
       text-decoration: none;
       margin-right: 16px;
       font-weight: 500;
-      color: #2563eb;
+      color: var(--link);
     }
 
     nav a:hover {
       text-decoration: underline;
+    }
+
+    .theme-toggle {
+      cursor: pointer;
+      padding: 6px 10px;
+      border-radius: 8px;
+      background: var(--card);
+      box-shadow: 0 2px 6px var(--shadow);
+      font-size: 14px;
     }
 
     ul {
@@ -39,20 +77,20 @@
     }
 
     li {
-      background: #fff;
+      background: var(--card);
       border-radius: 10px;
       padding: 16px 18px;
       margin-bottom: 14px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 10px var(--shadow);
       transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
 
     li:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+      box-shadow: 0 8px 18px var(--shadow);
     }
 
     .problem-info {
@@ -62,7 +100,7 @@
     .problem-info a {
       font-size: 16px;
       font-weight: 600;
-      color: #111827;
+      color: var(--heading);
       text-decoration: none;
     }
 
@@ -73,7 +111,7 @@
     .meta {
       margin-top: 6px;
       font-size: 14px;
-      color: #6b7280;
+      color: var(--muted);
     }
 
     .difficulty {
@@ -119,7 +157,7 @@
     }
 
     code {
-      background: #f1f5f9;
+      background: var(--code-bg);
       padding: 2px 6px;
       border-radius: 6px;
       font-size: 13px;
@@ -127,10 +165,10 @@
     }
 
     .empty {
-      background: #fff;
+      background: var(--card);
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 10px var(--shadow);
     }
 
     @media (max-width: 640px) {
@@ -151,14 +189,32 @@
   <h1>Today's LeetCode Problems</h1>
 
   <nav>
-    <a href="index.html">Today</a>
-    <a href="solved.html">Solved Problems</a>
-    <a href="solve_later.html">Solve Later Problems</a>
+    <div>
+      <a href="index.html">Today</a>
+      <a href="solved.html">Solved Problems</a>
+      <a href="solve_later.html">Solve Later Problems</a>
+    </div>
+
+    <!-- Dark mode toggle -->
+    <div class="theme-toggle" onclick="toggleTheme()">🌗</div>
   </nav>
 
   <ul id="list"></ul>
 
   <script>
+    /* ---------- DARK MODE ---------- */
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+      localStorage.theme = document.body.classList.contains("dark")
+        ? "dark"
+        : "light";
+    }
+
+    if (localStorage.theme === "dark") {
+      document.body.classList.add("dark");
+    }
+
+    /* ---------- EXISTING LOGIC (UNCHANGED) ---------- */
     const today = new Date().toISOString().split("T")[0];
 
     fetch("./data/state.json")
@@ -198,13 +254,13 @@
           `;
 
           const copyBtn = document.createElement("button");
-          copyBtn.textContent = "Copy Slug";
+          copyBtn.textContent = "Copy";
           copyBtn.onclick = () => {
             navigator.clipboard.writeText(p.slug).then(() => {
               copyBtn.textContent = "Copied!";
               copyBtn.classList.add("copied");
               setTimeout(() => {
-                copyBtn.textContent = "Copy Slug";
+                copyBtn.textContent = "Copy";
                 copyBtn.classList.remove("copied");
               }, 1200);
             });

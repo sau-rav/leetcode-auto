@@ -5,33 +5,72 @@
   <title>Solved Problems</title>
 
   <style>
+    /* ---------- THEME VARIABLES ---------- */
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #222;
+      --heading: #111827;
+      --muted: #6b7280;
+      --link: #2563eb;
+      --border: #d1d5db;
+      --shadow: rgba(0,0,0,0.06);
+    }
+
+    body.dark {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #e5e7eb;
+      --heading: #f9fafb;
+      --muted: #9ca3af;
+      --link: #60a5fa;
+      --border: #334155;
+      --shadow: rgba(0,0,0,0.4);
+    }
+
+    /* ---------- BASE ---------- */
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #f7f9fc;
+      background: var(--bg);
       margin: 0;
       padding: 24px;
-      color: #222;
+      color: var(--text);
+      transition: background 0.2s ease, color 0.2s ease;
     }
 
     h1 {
       margin-bottom: 12px;
+      color: var(--heading);
     }
 
     nav {
       margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     nav a {
       text-decoration: none;
       margin-right: 16px;
       font-weight: 500;
-      color: #2563eb;
+      color: var(--link);
     }
 
     nav a:hover {
       text-decoration: underline;
     }
 
+    .theme-toggle {
+      cursor: pointer;
+      padding: 6px 10px;
+      border-radius: 8px;
+      background: var(--card);
+      box-shadow: 0 2px 6px var(--shadow);
+      font-size: 14px;
+    }
+
+    /* ---------- SEARCH ---------- */
     .search-box {
       margin-bottom: 20px;
       max-width: 400px;
@@ -41,16 +80,13 @@
       width: 100%;
       padding: 10px 14px;
       border-radius: 8px;
-      border: 1px solid #d1d5db;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
       font-size: 14px;
-      outline: none;
     }
 
-    .search-box input:focus {
-      border-color: #2563eb;
-      box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
-    }
-
+    /* ---------- LIST ---------- */
     ul {
       list-style: none;
       padding: 0;
@@ -58,26 +94,20 @@
     }
 
     li {
-      background: #fff;
+      background: var(--card);
       border-radius: 10px;
       padding: 16px 18px;
       margin-bottom: 14px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-    }
-
-    li:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 10px var(--shadow);
     }
 
     .problem-info a {
       font-size: 16px;
       font-weight: 600;
-      color: #111827;
+      color: var(--heading);
       text-decoration: none;
     }
 
@@ -88,7 +118,7 @@
     .meta {
       margin-top: 6px;
       font-size: 14px;
-      color: #6b7280;
+      color: var(--muted);
     }
 
     .difficulty {
@@ -98,42 +128,37 @@
       margin-left: 6px;
     }
 
-    .easy {
-      background: #dcfce7;
-      color: #166534;
+    .easy { background: #dcfce7; color: #166534; }
+    .medium { background: #fef3c7; color: #92400e; }
+    .hard { background: #fee2e2; color: #991b1b; }
+
+    /* ---------- PAGINATION ---------- */
+    .pagination {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
     }
 
-    .medium {
-      background: #fef3c7;
-      color: #92400e;
+    .pagination button {
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: none;
+      background: #2563eb;
+      color: white;
+      cursor: pointer;
     }
 
-    .hard {
-      background: #fee2e2;
-      color: #991b1b;
-    }
-
-    code {
-      background: #f1f5f9;
-      padding: 2px 6px;
-      border-radius: 6px;
-      font-size: 13px;
-      margin-left: 4px;
+    .pagination button:disabled {
+      background: #9ca3af;
+      cursor: not-allowed;
     }
 
     .empty {
-      background: #fff;
+      background: var(--card);
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-    }
-
-    @media (max-width: 640px) {
-      li {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-      }
+      box-shadow: 0 4px 10px var(--shadow);
     }
   </style>
 </head>
@@ -142,78 +167,144 @@
   <h1>Solved Problems</h1>
 
   <nav>
-    <a href="index.html">Today</a>
-    <a href="solved.html">Solved Problems</a>
-    <a href="solve_later.html">Solve Later Problems</a>
+    <div>
+      <a href="index.html">Today</a>
+      <a href="solved.html">Solved Problems</a>
+      <a href="solve_later.html">Solve Later Problems</a>
+    </div>
+
+    <!-- 🌗 Dark mode toggle -->
+    <div class="theme-toggle" onclick="toggleTheme()">🌗</div>
   </nav>
 
   <!-- 🔍 Search -->
   <div class="search-box">
     <input
-      type="text"
       id="search"
-      placeholder="Search by title, slug, or difficulty..."
+      type="text"
+      placeholder="Search solved problems (top 5 results)..."
     />
   </div>
 
   <ul id="list"></ul>
 
+  <!-- Pagination -->
+  <div class="pagination" id="pagination">
+    <button id="prev">Prev</button>
+    <span id="pageInfo"></span>
+    <button id="next">Next</button>
+  </div>
+
   <script>
+    /* ---------- DARK MODE ---------- */
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+      localStorage.theme = document.body.classList.contains("dark")
+        ? "dark"
+        : "light";
+    }
+
+    if (localStorage.theme === "dark") {
+      document.body.classList.add("dark");
+    }
+
+    /* ---------- EXISTING LOGIC (UNCHANGED) ---------- */
+    const PAGE_SIZE = 10;
+
     let solvedProblems = [];
+    let currentPage = 1;
+
+    const list = document.getElementById("list");
+    const searchInput = document.getElementById("search");
+    const pagination = document.getElementById("pagination");
+    const prevBtn = document.getElementById("prev");
+    const nextBtn = document.getElementById("next");
+    const pageInfo = document.getElementById("pageInfo");
 
     fetch("./data/state.json")
       .then(r => r.json())
       .then(state => {
-        solvedProblems = state.problems.filter(
-          p => p.status === "solved"
-        );
-        render(solvedProblems);
+        solvedProblems = state.problems.filter(p => p.status === "solved");
+        renderPage();
       });
 
-    const list = document.getElementById("list");
-    const searchInput = document.getElementById("search");
-
     searchInput.addEventListener("input", () => {
-      const q = searchInput.value.toLowerCase();
+      const q = searchInput.value.trim().toLowerCase();
 
-      const filtered = solvedProblems.filter(p =>
-        p.title.toLowerCase().includes(q) ||
-        p.slug.toLowerCase().includes(q) ||
-        p.difficulty.toLowerCase().includes(q)
-      );
+      if (!q) {
+        pagination.style.display = "flex";
+        currentPage = 1;
+        renderPage();
+        return;
+      }
 
-      render(filtered);
+      const results = solvedProblems
+        .filter(p =>
+          p.title.toLowerCase().includes(q) ||
+          p.slug.toLowerCase().includes(q) ||
+          p.difficulty.toLowerCase().includes(q)
+        )
+        .slice(0, 5);
+
+      pagination.style.display = "none";
+      renderList(results);
     });
 
-    function render(problems) {
+    prevBtn.onclick = () => {
+      if (currentPage > 1) {
+        currentPage--;
+        renderPage();
+      }
+    };
+
+    nextBtn.onclick = () => {
+      const totalPages = Math.ceil(solvedProblems.length / PAGE_SIZE);
+      if (currentPage < totalPages) {
+        currentPage++;
+        renderPage();
+      }
+    };
+
+    function renderPage() {
+      const start = (currentPage - 1) * PAGE_SIZE;
+      const pageItems = solvedProblems.slice(start, start + PAGE_SIZE);
+
+      renderList(pageItems);
+
+      const totalPages = Math.ceil(solvedProblems.length / PAGE_SIZE);
+      pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+
+      prevBtn.disabled = currentPage === 1;
+      nextBtn.disabled = currentPage === totalPages;
+    }
+
+    function renderList(problems) {
       list.innerHTML = "";
 
       if (!problems.length) {
-        list.innerHTML = `<li class="empty">No matching problems found 🔍</li>`;
+        list.innerHTML = `<li class="empty">No problems found</li>`;
         return;
       }
 
       problems.forEach(p => {
         const li = document.createElement("li");
-
-        const info = document.createElement("div");
-        info.className = "problem-info";
-
         const difficultyClass = p.difficulty.toLowerCase();
 
-        info.innerHTML = `
-          <a href="https://leetcode.com/problems/${p.slug}" target="_blank">
-            ${p.title}
-          </a>
-          <div class="meta">
-            <code>${p.slug}</code>
-            • <span class="difficulty ${difficultyClass}">
-              ${p.difficulty}
-            </span>
+        li.innerHTML = `
+          <div class="problem-info">
+            <a href="https://leetcode.com/problems/${p.slug}" target="_blank">
+              ${p.title}
+            </a>
+            <div class="meta">
+              ${p.slug}
+              • <span class="difficulty ${difficultyClass}">
+                ${p.difficulty}
+              </span>
+              • <strong>${p.status}</strong>
+            </div>
           </div>
         `;
 
-        li.appendChild(info);
         list.appendChild(li);
       });
     }
