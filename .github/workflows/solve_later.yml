@@ -11,10 +11,6 @@ jobs:
   mark_solve_later:
     runs-on: ubuntu-latest
 
-    # ✅ Make env available to ALL steps
-    env:
-      TITLE_SLUG: ${{ github.event.inputs.title_slug }}
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -29,14 +25,16 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
+      # ✅ Pass slug as command-line argument
       - name: Run solve_later updater
-        run: python scripts/mark_solve_later.py
+        run: |
+          python scripts/mark_solve_later.py "${{ github.event.inputs.title_slug }}"
 
       - name: Commit & push changes
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add data/state.json
-          git commit -m "Mark ${TITLE_SLUG} as solve_later" || echo "No changes to commit"
+          git commit -m "Mark ${{ github.event.inputs.title_slug }} as solve_later" || echo "No changes to commit"
           git push
 
