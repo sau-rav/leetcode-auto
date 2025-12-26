@@ -19,7 +19,7 @@ for p in state["problems"]:
     if p["slug"] == slug:
         p["status"] = "pending"
         p["assigned_on"] = None
-        p["solve_later"] = true
+        p["solve_later"] = True
         found = True
         break
 
