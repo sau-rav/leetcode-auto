@@ -1,13 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Solved Problems</title>
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    li { margin-bottom: 10px; }
-    button { margin-left: 10px; }
-    nav a { margin-right: 15px; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f7f9fc;
+      margin: 0;
+      padding: 24px;
+      color: #222;
+    }
+
+    h1 {
+      margin-bottom: 12px;
+    }
+
+    nav {
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin-right: 16px;
+      font-weight: 500;
+      color: #2563eb;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .search-box {
+      margin-bottom: 20px;
+      max-width: 400px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid #d1d5db;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .search-box input:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 900px;
+    }
+
+    li {
+      background: #fff;
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    li:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+    }
+
+    .problem-info a {
+      font-size: 16px;
+      font-weight: 600;
+      color: #111827;
+      text-decoration: none;
+    }
+
+    .problem-info a:hover {
+      text-decoration: underline;
+    }
+
+    .meta {
+      margin-top: 6px;
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    .difficulty {
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-left: 6px;
+    }
+
+    .easy {
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    .medium {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .hard {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 13px;
+      margin-left: 4px;
+    }
+
+    .empty {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    }
+
+    @media (max-width: 640px) {
+      li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
   </style>
 </head>
 
@@ -20,37 +147,76 @@
     <a href="solve_later.html">Solve Later Problems</a>
   </nav>
 
+  <!-- 🔍 Search -->
+  <div class="search-box">
+    <input
+      type="text"
+      id="search"
+      placeholder="Search by title, slug, or difficulty..."
+    />
+  </div>
+
   <ul id="list"></ul>
 
   <script>
+    let solvedProblems = [];
+
     fetch("./data/state.json")
       .then(r => r.json())
       .then(state => {
-        const list = document.getElementById("list");
-
-        const problems = state.problems.filter(
+        solvedProblems = state.problems.filter(
           p => p.status === "solved"
         );
-
-        if (!problems.length) {
-          list.innerHTML = "<li>No solved problems yet</li>";
-          return;
-        }
-
-        problems.forEach(p => {
-          const li = document.createElement("li");
-
-          li.innerHTML = `
-            <a href="https://leetcode.com/problems/${p.slug}" target="_blank">
-              ${p.title}
-            </a>
-            <code>(${p.slug})</code>
-            - ${p.difficulty}
-          `;
-
-          list.appendChild(li);
-        });
+        render(solvedProblems);
       });
+
+    const list = document.getElementById("list");
+    const searchInput = document.getElementById("search");
+
+    searchInput.addEventListener("input", () => {
+      const q = searchInput.value.toLowerCase();
+
+      const filtered = solvedProblems.filter(p =>
+        p.title.toLowerCase().includes(q) ||
+        p.slug.toLowerCase().includes(q) ||
+        p.difficulty.toLowerCase().includes(q)
+      );
+
+      render(filtered);
+    });
+
+    function render(problems) {
+      list.innerHTML = "";
+
+      if (!problems.length) {
+        list.innerHTML = `<li class="empty">No matching problems found 🔍</li>`;
+        return;
+      }
+
+      problems.forEach(p => {
+        const li = document.createElement("li");
+
+        const info = document.createElement("div");
+        info.className = "problem-info";
+
+        const difficultyClass = p.difficulty.toLowerCase();
+
+        info.innerHTML = `
+          <a href="https://leetcode.com/problems/${p.slug}" target="_blank">
+            ${p.title}
+          </a>
+          <div class="meta">
+            <code>${p.slug}</code>
+            • <span class="difficulty ${difficultyClass}">
+              ${p.difficulty}
+            </span>
+          </div>
+        `;
+
+        li.appendChild(info);
+        list.appendChild(li);
+      });
+    }
   </script>
 </body>
 </html>
