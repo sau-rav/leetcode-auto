@@ -10,6 +10,7 @@
       --card: #ffffff;
       --text: #222;
       --muted: #6b7280;
+      --border: #d1d5db;
       --primary: #2563eb;
     }
 
@@ -18,6 +19,7 @@
       --card: #1e293b;
       --text: #e5e7eb;
       --muted: #94a3b8;
+      --border: #334155;
     }
 
     body {
@@ -63,7 +65,9 @@
       width: 100%;
       padding: 10px 14px;
       border-radius: 8px;
-      border: 1px solid #d1d5db;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
       font-size: 14px;
     }
 
