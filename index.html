@@ -1,13 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Today's LeetCode Problems</title>
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    li { margin-bottom: 10px; }
-    button { margin-left: 10px; }
-    nav a { margin-right: 15px; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f7f9fc;
+      margin: 0;
+      padding: 24px;
+      color: #222;
+    }
+
+    h1 {
+      margin-bottom: 12px;
+    }
+
+    nav {
+      margin-bottom: 24px;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin-right: 16px;
+      font-weight: 500;
+      color: #2563eb;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 900px;
+    }
+
+    li {
+      background: #fff;
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    li:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+    }
+
+    .problem-info {
+      max-width: 75%;
+    }
+
+    .problem-info a {
+      font-size: 16px;
+      font-weight: 600;
+      color: #111827;
+      text-decoration: none;
+    }
+
+    .problem-info a:hover {
+      text-decoration: underline;
+    }
+
+    .meta {
+      margin-top: 6px;
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    .difficulty {
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-left: 6px;
+    }
+
+    .easy {
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    .medium {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .hard {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: background 0.15s ease;
+      white-space: nowrap;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    button.copied {
+      background: #16a34a;
+    }
+
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 13px;
+      margin-left: 4px;
+    }
+
+    .empty {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    }
+
+    @media (max-width: 640px) {
+      li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .problem-info {
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
 
@@ -37,31 +173,45 @@
         );
 
         if (!problems.length) {
-          list.innerHTML = "<li>No new problems pending today</li>";
+          list.innerHTML = `<li class="empty">🎉 No new problems pending today</li>`;
           return;
         }
 
         problems.forEach(p => {
           const li = document.createElement("li");
 
+          const info = document.createElement("div");
+          info.className = "problem-info";
+
+          const difficultyClass = p.difficulty.toLowerCase();
+
+          info.innerHTML = `
+            <a href="https://leetcode.com/problems/${p.slug}" target="_blank">
+              ${p.title}
+            </a>
+            <div class="meta">
+              <code>${p.slug}</code>
+              • <span class="difficulty ${difficultyClass}">
+                ${p.difficulty}
+              </span>
+              • <strong>${p.status}</strong>
+            </div>
+          `;
+
           const copyBtn = document.createElement("button");
           copyBtn.textContent = "Copy Slug";
           copyBtn.onclick = () => {
             navigator.clipboard.writeText(p.slug).then(() => {
               copyBtn.textContent = "Copied!";
-              setTimeout(() => copyBtn.textContent = "Copy Slug", 1000);
+              copyBtn.classList.add("copied");
+              setTimeout(() => {
+                copyBtn.textContent = "Copy Slug";
+                copyBtn.classList.remove("copied");
+              }, 1200);
             });
           };
 
-          li.innerHTML = `
-            <a href="https://leetcode.com/problems/${p.slug}" target="_blank">
-              ${p.title}
-            </a>
-            <code>(${p.slug})</code>
-            - ${p.difficulty}
-            - <strong>${p.status}</strong>
-          `;
-
+          li.appendChild(info);
           li.appendChild(copyBtn);
           list.appendChild(li);
         });
