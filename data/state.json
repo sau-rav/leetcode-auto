@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2025-12-25"
+    "last_generated_on": "2025-12-26"
   },
   "problems": [
     {
@@ -5873,7 +5873,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-26"
     },
     {
       "slug": "max-increase-to-keep-city-skyline",
@@ -6251,7 +6251,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-26"
     },
     {
       "slug": "maximize-distance-to-closest-person",
@@ -17080,7 +17080,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-26"
     },
     {
       "slug": "find-closest-node-to-given-two-nodes",
@@ -19618,7 +19618,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-26"
     },
     {
       "slug": "compact-object",
@@ -23795,7 +23795,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-26"
     },
     {
       "slug": "find-x-sum-of-all-k-long-subarrays-ii",
