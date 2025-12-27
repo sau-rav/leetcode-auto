@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2025-12-26"
+    "last_generated_on": "2025-12-27"
   },
   "problems": [
     {
@@ -3883,7 +3883,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-27"
     },
     {
       "slug": "continuous-subarray-sum",
@@ -7673,7 +7673,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-27"
     },
     {
       "slug": "minimum-domino-rotations-for-equal-row",
@@ -8177,7 +8177,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-27"
     },
     {
       "slug": "occurrences-after-bigram",
@@ -19582,7 +19582,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-27"
     },
     {
       "slug": "find-the-punishment-number-of-an-integer",
@@ -23192,7 +23192,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-27"
     },
     {
       "slug": "find-the-number-of-winning-players",
