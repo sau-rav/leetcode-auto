@@ -918,10 +918,11 @@
       "slug": "binary-tree-level-order-traversal",
       "title": "Binary Tree Level Order Traversal",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": "2025-12-27"
+      "assigned_on": null,
+      "solved_on": "2025-12-27"
     },
     {
       "slug": "binary-tree-zigzag-level-order-traversal",
@@ -8449,7 +8450,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-27"
     },
     {
       "slug": "shortest-path-with-alternating-colors",
@@ -9988,7 +9989,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-27"
     },
     {
       "slug": "linked-list-in-binary-tree",
@@ -13623,10 +13624,11 @@
       "slug": "minimum-speed-to-arrive-on-time",
       "title": "Minimum Speed to Arrive on Time",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": "2025-12-27"
+      "assigned_on": null,
+      "solved_on": "2025-12-27"
     },
     {
       "slug": "jump-game-vii",
@@ -16650,7 +16652,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-27"
     },
     {
       "slug": "design-a-text-editor",
@@ -16884,7 +16886,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-27"
     },
     {
       "slug": "the-latest-time-to-catch-a-bus",
@@ -23237,10 +23239,11 @@
       "slug": "design-neighbor-sum-service",
       "title": "Design Neighbor Sum Service",
       "difficulty": "Easy",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": "2025-12-27"
+      "assigned_on": null,
+      "solved_on": "2025-12-27"
     },
     {
       "slug": "shortest-distance-after-road-addition-queries-i",
@@ -26442,10 +26445,11 @@
       "slug": "restore-finishing-order",
       "title": "Restore Finishing Order",
       "difficulty": "Easy",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": "2025-12-27"
+      "assigned_on": null,
+      "solved_on": "2025-12-27"
     },
     {
       "slug": "balanced-k-factor-decomposition",
