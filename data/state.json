@@ -921,7 +921,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-27"
     },
     {
       "slug": "binary-tree-zigzag-level-order-traversal",
@@ -3880,10 +3880,11 @@
       "slug": "longest-uncommon-subsequence-ii",
       "title": "Longest Uncommon Subsequence II",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": "2025-12-27"
+      "assigned_on": null,
+      "solved_on": "2025-12-27"
     },
     {
       "slug": "continuous-subarray-sum",
@@ -7670,10 +7671,11 @@
       "slug": "clumsy-factorial",
       "title": "Clumsy Factorial",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": "2025-12-27"
+      "assigned_on": null,
+      "solved_on": "2025-12-27"
     },
     {
       "slug": "minimum-domino-rotations-for-equal-row",
@@ -13624,7 +13626,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-27"
     },
     {
       "slug": "jump-game-vii",
@@ -19579,10 +19581,11 @@
       "slug": "lexicographically-smallest-palindrome",
       "title": "Lexicographically Smallest Palindrome",
       "difficulty": "Easy",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": "2025-12-27"
+      "assigned_on": null,
+      "solved_on": "2025-12-27"
     },
     {
       "slug": "find-the-punishment-number-of-an-integer",
@@ -23237,7 +23240,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-27"
     },
     {
       "slug": "shortest-distance-after-road-addition-queries-i",
@@ -26442,7 +26445,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-27"
     },
     {
       "slug": "balanced-k-factor-decomposition",
