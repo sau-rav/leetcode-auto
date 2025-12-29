@@ -202,76 +202,108 @@
   <ul id="list"></ul>
 
   <script>
-    /* ---------- DARK MODE ---------- */
-    function toggleTheme() {
-      document.body.classList.toggle("dark");
-      localStorage.theme = document.body.classList.contains("dark")
-        ? "dark"
-        : "light";
-    }
+  /* ---------- DARK MODE ---------- */
+  function toggleTheme() {
+    document.body.classList.toggle("dark");
+    localStorage.theme = document.body.classList.contains("dark")
+      ? "dark"
+      : "light";
+  }
 
-    if (localStorage.theme === "dark") {
-      document.body.classList.add("dark");
-    }
+  if (localStorage.theme === "dark") {
+    document.body.classList.add("dark");
+  }
 
-    /* ---------- EXISTING LOGIC (UNCHANGED) ---------- */
-    const today = new Date().toISOString().split("T")[0];
+  /* ---------- DATA LOGIC ---------- */
+  const today = new Date().toISOString().split("T")[0];
 
-    fetch("./data/state.json")
-      .then(r => r.json())
-      .then(state => {
-        const list = document.getElementById("list");
+  fetch("./data/state.json")
+    .then(r => r.json())
+    .then(state => {
+      const list = document.getElementById("list");
 
-        const problems = state.problems.filter(p =>
+      // 1️⃣ Problems explicitly assigned today
+      let problems = state.problems.filter(p =>
+        p.status === "pending" &&
+        !p.solve_later &&
+        p.assigned_on === today
+      );
+
+      let headingText = "📅 Today's Problems";
+
+      // 2️⃣ Fallback: pending but unassigned
+      if (problems.length === 0) {
+        problems = state.problems.filter(p =>
           p.status === "pending" &&
           !p.solve_later &&
-          p.assigned_on === today
+          p.assigned_on === null
         );
+        headingText = "⏳ Pending Problems (Not Assigned Yet)";
+      }
 
-        if (!problems.length) {
-          list.innerHTML = `<li class="empty">🎉 No new problems pending today</li>`;
-          return;
-        }
+      // 3️⃣ Nothing at all
+      if (problems.length === 0) {
+        list.innerHTML = `
+          <li class="empty">
+            🎉 No pending problems available
+          </li>
+        `;
+        return;
+      }
 
-        problems.forEach(p => {
-          const li = document.createElement("li");
+      // Section header
+      const header = document.createElement("li");
+      header.className = "empty";
+      header.style.fontWeight = "600";
+      header.textContent = headingText;
+      list.appendChild(header);
 
-          const info = document.createElement("div");
-          info.className = "problem-info";
+      problems.forEach(p => {
+        const li = document.createElement("li");
 
-          const difficultyClass = p.difficulty.toLowerCase();
+        const info = document.createElement("div");
+        info.className = "problem-info";
 
-          info.innerHTML = `
-            <a href="https://leetcode.com/problems/${p.slug}" target="_blank">
-              ${p.title}
-            </a>
-            <div class="meta">
-              <code>${p.slug}</code>
-              • <span class="difficulty ${difficultyClass}">
-                ${p.difficulty}
-              </span>
-            </div>
-          `;
+        const difficultyClass = p.difficulty.toLowerCase();
 
-          const copyBtn = document.createElement("button");
-          copyBtn.textContent = "Copy";
-          copyBtn.onclick = () => {
-            navigator.clipboard.writeText(p.slug).then(() => {
-              copyBtn.textContent = "Copied!";
-              copyBtn.classList.add("copied");
-              setTimeout(() => {
-                copyBtn.textContent = "Copy";
-                copyBtn.classList.remove("copied");
-              }, 1200);
-            });
-          };
+        info.innerHTML = `
+          <a href="https://leetcode.com/problems/${p.slug}" target="_blank">
+            ${p.title}
+          </a>
+          <div class="meta">
+            <code>${p.slug}</code>
+            • <span class="difficulty ${difficultyClass}">
+              ${p.difficulty}
+            </span>
+            • <strong>${p.status}</strong>
+          </div>
+        `;
 
-          li.appendChild(info);
-          li.appendChild(copyBtn);
-          list.appendChild(li);
-        });
+        const copyBtn = document.createElement("button");
+        copyBtn.textContent = "Copy Slug";
+        copyBtn.onclick = () => {
+          navigator.clipboard.writeText(p.slug).then(() => {
+            copyBtn.textContent = "Copied!";
+            copyBtn.classList.add("copied");
+            setTimeout(() => {
+              copyBtn.textContent = "Copy Slug";
+              copyBtn.classList.remove("copied");
+            }, 1200);
+          });
+        };
+
+        li.appendChild(info);
+        li.appendChild(copyBtn);
+        list.appendChild(li);
       });
-  </script>
+    })
+    .catch(err => {
+      document.getElementById("list").innerHTML = `
+        <li class="empty">❌ Failed to load state.json</li>
+      `;
+      console.error(err);
+    });
+     </script>
 </body>
 </html>
 
