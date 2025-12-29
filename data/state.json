@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2025-12-27"
+    "last_generated_on": "2025-12-29"
   },
   "problems": [
     {
@@ -4461,7 +4461,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-29"
     },
     {
       "slug": "valid-triangle-number",
@@ -11132,7 +11132,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-29"
     },
     {
       "slug": "find-a-value-of-a-mysterious-function-closest-to-target",
@@ -12951,7 +12951,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-29"
     },
     {
       "slug": "closest-dessert-cost",
@@ -13808,7 +13808,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-29"
     },
     {
       "slug": "minimum-cost-to-change-the-final-value-of-expression",
@@ -24720,7 +24720,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-29"
     },
     {
       "slug": "count-substrings-divisible-by-last-digit",
