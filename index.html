@@ -197,11 +197,41 @@
 
     <!-- Dark mode toggle -->
     <div class="theme-toggle" onclick="toggleTheme()">🌗</div>
-  </nav>
+    </nav>
 
-  <ul id="list"></ul>
+        <input
+              id="search"
+              type="text"
+              placeholder="Search by title or slug..."
+              style="
+                width: 100%;
+                max-width: 900px;
+                padding: 12px 14px;
+                margin-bottom: 18px;
+                border-radius: 10px;
+                border: 1px solid #e5e7eb;
+                font-size: 15px;
+                background: var(--card);
+                color: var(--text);
+                box-shadow: 0 4px 10px var(--shadow);
+              "
+            />
 
-  <script>
+      <ul id="list"></ul>
+      <div id="pagination" style="
+      max-width: 900px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    ">
+      <button id="prevBtn">← Prev</button>
+      <span id="pageInfo" style="align-self:center;"></span>
+      <button id="nextBtn">Next →</button>
+    </div>
+
+
+    <script>
   /* ---------- DARK MODE ---------- */
   function toggleTheme() {
     document.body.classList.toggle("dark");
@@ -214,96 +244,149 @@
     document.body.classList.add("dark");
   }
 
-  /* ---------- DATA LOGIC ---------- */
+  /* ---------- CONFIG ---------- */
+  const PAGE_SIZE = 10;
+  let currentPage = 1;
+
+  let allProblems = [];
+  let visibleProblems = [];
+
+  const list = document.getElementById("list");
+  const searchInput = document.getElementById("search");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+  const pageInfo = document.getElementById("pageInfo");
+
   const today = new Date().toISOString().split("T")[0];
 
+  /* ---------- FILTER ---------- */
+  function applySearch() {
+    const q = searchInput.value.trim().toLowerCase();
+
+    visibleProblems = allProblems.filter(p =>
+      p.title.toLowerCase().includes(q) ||
+      p.slug.toLowerCase().includes(q)
+    );
+
+    currentPage = 1;
+    renderPage();
+  }
+
+  /* ---------- RENDER ---------- */
+  function renderPage() {
+    list.innerHTML = "";
+
+    if (visibleProblems.length === 0) {
+      list.innerHTML = `
+        <li class="empty">🔍 No problems match your search</li>
+      `;
+      document.getElementById("pagination").style.display = "none";
+      return;
+    }
+
+    document.getElementById("pagination").style.display = "flex";
+
+    const totalPages = Math.ceil(visibleProblems.length / PAGE_SIZE);
+    const start = (currentPage - 1) * PAGE_SIZE;
+    const end = start + PAGE_SIZE;
+
+    visibleProblems.slice(start, end).forEach(p => {
+      const li = document.createElement("li");
+
+      const info = document.createElement("div");
+      info.className = "problem-info";
+
+      const difficultyClass = p.difficulty.toLowerCase();
+
+      info.innerHTML = `
+        <a href="https://leetcode.com/problems/${p.slug}" target="_blank">
+          ${p.title}
+        </a>
+        <div class="meta">
+          <code>${p.slug}</code>
+          • <span class="difficulty ${difficultyClass}">
+            ${p.difficulty}
+          </span>
+          • <strong>${p.status}</strong>
+        </div>
+      `;
+
+      const copyBtn = document.createElement("button");
+      copyBtn.textContent = "Copy Slug";
+      copyBtn.onclick = () => {
+        navigator.clipboard.writeText(p.slug).then(() => {
+          copyBtn.textContent = "Copied!";
+          copyBtn.classList.add("copied");
+          setTimeout(() => {
+            copyBtn.textContent = "Copy Slug";
+            copyBtn.classList.remove("copied");
+          }, 1200);
+        });
+      };
+
+      li.appendChild(info);
+      li.appendChild(copyBtn);
+      list.appendChild(li);
+    });
+
+    pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+    prevBtn.disabled = currentPage === 1;
+    nextBtn.disabled = currentPage === totalPages;
+  }
+
+  /* ---------- LOAD DATA ---------- */
   fetch("./data/state.json")
     .then(r => r.json())
     .then(state => {
-      const list = document.getElementById("list");
 
-      // 1️⃣ Problems explicitly assigned today
-      let problems = state.problems.filter(p =>
+      // 1️⃣ Today’s assigned
+      allProblems = state.problems.filter(p =>
         p.status === "pending" &&
         !p.solve_later &&
         p.assigned_on === today
       );
 
-      let headingText = "📅 Today's Problems";
-
-      // 2️⃣ Fallback: pending but unassigned
-      if (problems.length === 0) {
-        problems = state.problems.filter(p =>
+      // 2️⃣ Fallback
+      if (allProblems.length === 0) {
+        allProblems = state.problems.filter(p =>
           p.status === "pending" &&
           !p.solve_later &&
           p.assigned_on === null
         );
-        headingText = "⏳ Pending Problems (Not Assigned Yet)";
       }
 
-      // 3️⃣ Nothing at all
-      if (problems.length === 0) {
+      if (allProblems.length === 0) {
         list.innerHTML = `
-          <li class="empty">
-            🎉 No pending problems available
-          </li>
+          <li class="empty">🎉 No pending problems available</li>
         `;
+        document.getElementById("pagination").style.display = "none";
         return;
       }
 
-      // Section header
-      const header = document.createElement("li");
-      header.className = "empty";
-      header.style.fontWeight = "600";
-      header.textContent = headingText;
-      list.appendChild(header);
-
-      problems.forEach(p => {
-        const li = document.createElement("li");
-
-        const info = document.createElement("div");
-        info.className = "problem-info";
-
-        const difficultyClass = p.difficulty.toLowerCase();
-
-        info.innerHTML = `
-          <a href="https://leetcode.com/problems/${p.slug}" target="_blank">
-            ${p.title}
-          </a>
-          <div class="meta">
-            <code>${p.slug}</code>
-            • <span class="difficulty ${difficultyClass}">
-              ${p.difficulty}
-            </span>
-            • <strong>${p.status}</strong>
-          </div>
-        `;
-
-        const copyBtn = document.createElement("button");
-        copyBtn.textContent = "Copy Slug";
-        copyBtn.onclick = () => {
-          navigator.clipboard.writeText(p.slug).then(() => {
-            copyBtn.textContent = "Copied!";
-            copyBtn.classList.add("copied");
-            setTimeout(() => {
-              copyBtn.textContent = "Copy Slug";
-              copyBtn.classList.remove("copied");
-            }, 1200);
-          });
-        };
-
-        li.appendChild(info);
-        li.appendChild(copyBtn);
-        list.appendChild(li);
-      });
-    })
-    .catch(err => {
-      document.getElementById("list").innerHTML = `
-        <li class="empty">❌ Failed to load state.json</li>
-      `;
-      console.error(err);
+      visibleProblems = [...allProblems];
+      renderPage();
     });
-     </script>
+
+  /* ---------- EVENTS ---------- */
+  searchInput.addEventListener("input", applySearch);
+
+  prevBtn.onclick = () => {
+    if (currentPage > 1) {
+      currentPage--;
+      renderPage();
+    }
+  };
+
+  nextBtn.onclick = () => {
+    const totalPages = Math.ceil(visibleProblems.length / PAGE_SIZE);
+    if (currentPage < totalPages) {
+      currentPage++;
+      renderPage();
+    }
+  };
+</script>
+
+
 </body>
 </html>
 
