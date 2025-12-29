@@ -4459,9 +4459,9 @@
       "title": "Triangle Judgement",
       "difficulty": "Easy",
       "status": "pending",
-      "solve_later": false,
+      "solve_later": true,
       "revision": false,
-      "assigned_on": "2025-12-29"
+      "assigned_on": null
     },
     {
       "slug": "valid-triangle-number",
