@@ -4,6 +4,7 @@ import os
 import random
 from datetime import datetime, date
 from collections import defaultdict
+from requests.exceptions import RequestException, Timeout
 
 # ================= CONFIG =================
 LEETCODE_USER = "saurav_ksharma"
@@ -22,15 +23,20 @@ HEADERS = {
 # ==========================================
 
 
-def graphql(query, variables):
-    r = requests.post(
-        GRAPHQL,
-        headers=HEADERS,
-        json={"query": query, "variables": variables},
-        timeout=20
-    )
-    r.raise_for_status()
-    return r.json()["data"]
+# ---------- SAFE GRAPHQL ----------
+def safe_graphql(query, variables):
+    try:
+        r = requests.post(
+            GRAPHQL,
+            headers=HEADERS,
+            json={"query": query, "variables": variables},
+            timeout=15
+        )
+        r.raise_for_status()
+        return r.json()["data"]
+    except (RequestException, Timeout) as e:
+        print("⚠️ LeetCode API failed:", str(e))
+        return None
 
 
 def load_state():
@@ -53,7 +59,9 @@ def fetch_recent_solved():
       }
     }
     """
-    data = graphql(query, {"username": LEETCODE_USER})
+    data = safe_graphql(query, {"username": LEETCODE_USER})
+    if not data:
+        return None
 
     solved = set()
     for s in data["recentAcSubmissionList"]:
@@ -72,21 +80,25 @@ def run():
     state = load_state()
     problems = state["problems"]
 
-    # ---- 1. MARK SOLVED PROBLEMS ----
+    # ---- 1. TRY MARKING SOLVED PROBLEMS ----
     solved_recent = fetch_recent_solved()
-    print(f"Found {len(solved_recent)} problems solved since {SOLVED_AFTER.date()}")
 
-    solved_count = 0
-    for p in problems:
-        if p["status"] == "pending" and p["slug"] in solved_recent:
-            p["status"] = "solved"
-            p["solved_on"] = today
-            p["assigned_on"] = None
-            solved_count += 1
+    if solved_recent is None:
+        print("⚠️ Falling back: cannot check solved problems today")
+    else:
+        print(f"Found {len(solved_recent)} problems solved since {SOLVED_AFTER.date()}")
+        solved_count = 0
 
-    print(f"Marked {solved_count} problems as solved")
+        for p in problems:
+            if p["status"] == "pending" and p["slug"] in solved_recent:
+                p["status"] = "solved"
+                p["solved_on"] = today
+                p["assigned_on"] = None
+                solved_count += 1
 
-    # ---- 2. COUNT CURRENT PENDING (EXCLUDING solve_later) ----
+        print(f"Marked {solved_count} problems as solved")
+
+    # ---- 2. COUNT TODAY'S PENDING (EXCLUDING solve_later) ----
     pending_today = [
         p for p in problems
         if p["status"] == "pending"
@@ -102,16 +114,22 @@ def run():
 
     if len(pending_today) >= DAILY_TARGET:
         print("Daily quota already satisfied")
+        state["meta"]["last_generated_on"] = today
         save_state(state)
         return
 
-    # ---- 3. ELIGIBLE POOL ----
+    # ---- 3. FALLBACK POOL (NO LEETCODE DEPENDENCY) ----
     pool = [
         p for p in problems
         if p["status"] == "pending"
         and not p["solve_later"]
         and p["assigned_on"] is None
     ]
+
+    if not pool:
+        print("⚠️ No eligible problems left to assign")
+        save_state(state)
+        return
 
     buckets = defaultdict(list)
     for p in pool:
@@ -130,7 +148,7 @@ def run():
             new_assigned.append(q)
             need -= 1
 
-    # ---- 5. FILL TO 5 ----
+    # ---- 5. FILL TO DAILY TARGET ----
     while len(new_assigned) + len(pending_today) < DAILY_TARGET:
         for diff in ["Easy", "Medium", "Hard"]:
             if buckets[diff]:
@@ -146,7 +164,7 @@ def run():
     state["meta"]["last_generated_on"] = today
     save_state(state)
 
-    print(f"Assigned {len(new_assigned)} new problems")
+    print(f"Assigned {len(new_assigned)} new problems for today")
 
 
 if __name__ == "__main__":
