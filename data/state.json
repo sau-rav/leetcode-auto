@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2025-12-29"
+    "last_generated_on": "2025-12-30"
   },
   "problems": [
     {
@@ -1144,10 +1144,11 @@
       "slug": "word-ladder",
       "title": "Word Ladder",
       "difficulty": "Hard",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2025-12-30"
     },
     {
       "slug": "longest-consecutive-sequence",
@@ -1729,10 +1730,11 @@
       "slug": "number-of-islands",
       "title": "Number of Islands",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2025-12-30"
     },
     {
       "slug": "bitwise-and-of-numbers-range",
@@ -1918,10 +1920,11 @@
       "slug": "maximal-square",
       "title": "Maximal Square",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2025-12-30"
     },
     {
       "slug": "count-complete-tree-nodes",
@@ -5280,7 +5283,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-30"
     },
     {
       "slug": "self-dividing-numbers",
@@ -7522,7 +7525,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-30"
     },
     {
       "slug": "satisfiability-of-equality-equations",
@@ -7775,7 +7778,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-30"
     },
     {
       "slug": "binary-prefix-divisible-by-5",
@@ -15212,7 +15215,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-30"
     },
     {
       "slug": "delete-the-middle-node-of-a-linked-list",
@@ -27358,7 +27361,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-30"
     },
     {
       "slug": "minimum-swaps-to-avoid-forbidden-values",
