@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2025-12-30"
+    "last_generated_on": "2025-12-31"
   },
   "problems": [
     {
@@ -7522,10 +7522,11 @@
       "slug": "add-to-array-form-of-integer",
       "title": "Add to Array-Form of Integer",
       "difficulty": "Easy",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": "2025-12-30"
+      "assigned_on": null,
+      "solved_on": "2025-12-31"
     },
     {
       "slug": "satisfiability-of-equality-equations",
@@ -10541,7 +10542,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-31"
     },
     {
       "slug": "find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows",
@@ -11522,7 +11523,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-31"
     },
     {
       "slug": "number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers",
@@ -16259,7 +16260,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-31"
     },
     {
       "slug": "maximum-score-of-a-node-sequence",
@@ -16997,7 +16998,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-31"
     },
     {
       "slug": "number-of-zero-filled-subarrays",
@@ -20319,7 +20320,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2025-12-31"
     },
     {
       "slug": "max-pair-sum-in-an-array",
@@ -27358,10 +27359,11 @@
       "slug": "minimum-deletion-cost-to-make-all-characters-equal",
       "title": "Minimum Deletion Cost to Make All Characters Equal",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": "2025-12-30"
+      "assigned_on": null,
+      "solved_on": "2025-12-31"
     },
     {
       "slug": "minimum-swaps-to-avoid-forbidden-values",
