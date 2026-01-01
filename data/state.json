@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2025-12-31"
+    "last_generated_on": "2026-01-01"
   },
   "problems": [
     {
@@ -4716,7 +4716,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-01"
     },
     {
       "slug": "find-duplicate-subtrees",
@@ -5247,7 +5247,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-01"
     },
     {
       "slug": "remove-comments",
@@ -10539,10 +10539,11 @@
       "slug": "longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit",
       "title": "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": "2025-12-31"
+      "assigned_on": null,
+      "solved_on": "2026-01-01"
     },
     {
       "slug": "find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows",
@@ -11520,10 +11521,11 @@
       "slug": "replace-all-s-to-avoid-consecutive-repeating-characters",
       "title": "Replace All ?'s to Avoid Consecutive Repeating Characters",
       "difficulty": "Easy",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": "2025-12-31"
+      "assigned_on": null,
+      "solved_on": "2026-01-01"
     },
     {
       "slug": "number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers",
@@ -16257,10 +16259,11 @@
       "slug": "design-an-atm-machine",
       "title": "Design an ATM Machine",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": "2025-12-31"
+      "assigned_on": null,
+      "solved_on": "2026-01-01"
     },
     {
       "slug": "maximum-score-of-a-node-sequence",
@@ -16557,7 +16560,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-01"
     },
     {
       "slug": "check-if-number-has-equal-digit-count-and-digit-value",
@@ -16995,10 +16998,11 @@
       "slug": "best-poker-hand",
       "title": "Best Poker Hand",
       "difficulty": "Easy",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": "2025-12-31"
+      "assigned_on": null,
+      "solved_on": "2026-01-01"
     },
     {
       "slug": "number-of-zero-filled-subarrays",
@@ -19726,7 +19730,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-01"
     },
     {
       "slug": "semi-ordered-permutation",
@@ -19798,7 +19802,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-01"
     },
     {
       "slug": "calculator-with-method-chaining",
