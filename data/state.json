@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-01"
+    "last_generated_on": "2026-01-02"
   },
   "problems": [
     {
@@ -27,10 +27,11 @@
       "slug": "longest-substring-without-repeating-characters",
       "title": "Longest Substring Without Repeating Characters",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-02"
     },
     {
       "slug": "median-of-two-sorted-arrays",
@@ -45,10 +46,11 @@
       "slug": "longest-palindromic-substring",
       "title": "Longest Palindromic Substring",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-02"
     },
     {
       "slug": "zigzag-conversion",
@@ -93,16 +95,17 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-02"
     },
     {
       "slug": "container-with-most-water",
       "title": "Container With Most Water",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-02"
     },
     {
       "slug": "integer-to-roman",
@@ -135,10 +138,11 @@
       "slug": "3sum",
       "title": "3Sum",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-02"
     },
     {
       "slug": "3sum-closest",
@@ -1199,10 +1203,11 @@
       "slug": "clone-graph",
       "title": "Clone Graph",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-02"
     },
     {
       "slug": "gas-station",
@@ -1253,10 +1258,11 @@
       "slug": "word-break",
       "title": "Word Break",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-02"
     },
     {
       "slug": "word-break-ii",
@@ -1271,10 +1277,11 @@
       "slug": "linked-list-cycle",
       "title": "Linked List Cycle",
       "difficulty": "Easy",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-02"
     },
     {
       "slug": "linked-list-cycle-ii",
@@ -1571,7 +1578,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-02"
     },
     {
       "slug": "duplicate-emails",
@@ -2173,10 +2180,11 @@
       "slug": "missing-number",
       "title": "Missing Number",
       "difficulty": "Easy",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-02"
     },
     {
       "slug": "integer-to-english-words",
@@ -4686,10 +4694,11 @@
       "slug": "palindromic-substrings",
       "title": "Palindromic Substrings",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-02"
     },
     {
       "slug": "replace-words",
@@ -21989,7 +21998,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-02"
     },
     {
       "slug": "earliest-second-to-mark-indices-i",
@@ -23503,7 +23512,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-02"
     },
     {
       "slug": "maximize-score-of-numbers-in-ranges",
@@ -23900,7 +23909,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-02"
     },
     {
       "slug": "total-characters-in-string-after-transformations-i",
