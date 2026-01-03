@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-02"
+    "last_generated_on": "2026-01-03"
   },
   "problems": [
     {
@@ -1179,7 +1179,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-03"
     },
     {
       "slug": "palindrome-partitioning",
@@ -1296,10 +1296,11 @@
       "slug": "reorder-list",
       "title": "Reorder List",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-03"
     },
     {
       "slug": "binary-tree-preorder-traversal",
@@ -14381,7 +14382,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-03"
     },
     {
       "slug": "minimum-time-to-type-word-using-special-typewriter",
@@ -14408,7 +14409,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-03"
     },
     {
       "slug": "number-of-ways-to-separate-numbers",
@@ -24692,7 +24693,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-03"
     },
     {
       "slug": "maximum-manhattan-distance-after-k-changes",
@@ -24719,7 +24720,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-03"
     },
     {
       "slug": "sort-matrix-by-diagonals",
