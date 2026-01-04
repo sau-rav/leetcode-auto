@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-03"
+    "last_generated_on": "2026-01-04"
   },
   "problems": [
     {
@@ -3527,7 +3527,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-04"
     },
     {
       "slug": "ones-and-zeroes",
@@ -6995,7 +6995,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-04"
     },
     {
       "slug": "binary-subarrays-with-sum",
@@ -7346,7 +7346,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-04"
     },
     {
       "slug": "pancake-sorting",
@@ -11859,7 +11859,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-04"
     },
     {
       "slug": "fancy-sequence",
@@ -14121,7 +14121,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-04"
     },
     {
       "slug": "add-minimum-number-of-rungs",
