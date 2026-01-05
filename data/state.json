@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-04"
+    "last_generated_on": "2026-01-05"
   },
   "problems": [
     {
@@ -376,7 +376,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-05"
     },
     {
       "slug": "trapping-rain-water",
@@ -8374,7 +8374,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-05"
     },
     {
       "slug": "maximum-nesting-depth-of-two-valid-parentheses-strings",
@@ -9931,7 +9931,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-05"
     },
     {
       "slug": "number-of-substrings-containing-all-three-characters",
@@ -19983,7 +19983,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-05"
     },
     {
       "slug": "minimum-operations-to-make-the-integer-zero",
@@ -20343,7 +20343,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-05"
     },
     {
       "slug": "double-a-number-represented-as-a-linked-list",
