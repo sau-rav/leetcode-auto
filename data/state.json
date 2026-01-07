@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-06"
+    "last_generated_on": "2026-01-07"
   },
   "problems": [
     {
@@ -8527,7 +8527,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-07"
     },
     {
       "slug": "user-activity-for-the-past-30-days-i",
@@ -11435,7 +11435,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-07"
     },
     {
       "slug": "find-latest-group-of-size-m",
@@ -11877,7 +11877,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-07"
     },
     {
       "slug": "lexicographically-smallest-string-after-applying-operations",
@@ -17381,7 +17381,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-07"
     },
     {
       "slug": "number-of-ways-to-reach-a-position-after-exactly-k-steps",
@@ -21420,10 +21420,11 @@
       "slug": "double-modular-exponentiation",
       "title": "Double Modular Exponentiation",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-07"
     },
     {
       "slug": "count-subarrays-where-max-element-appears-at-least-k-times",
@@ -22716,10 +22717,11 @@
       "slug": "string-compression-iii",
       "title": "String Compression III",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-07"
     },
     {
       "slug": "find-the-number-of-good-pairs-ii",
@@ -23853,10 +23855,11 @@
       "slug": "minimum-division-operations-to-make-array-non-decreasing",
       "title": "Minimum Division Operations to Make Array Non Decreasing",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-07"
     },
     {
       "slug": "check-if-dfs-strings-are-palindromes",
@@ -24384,10 +24387,11 @@
       "slug": "minimum-operations-to-make-columns-strictly-increasing",
       "title": "Minimum Operations to Make Columns Strictly Increasing",
       "difficulty": "Easy",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-07"
     },
     {
       "slug": "find-the-lexicographically-largest-string-from-the-box-i",
@@ -25647,7 +25651,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-07"
     },
     {
       "slug": "seasonal-sales-analysis",
