@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-07"
+    "last_generated_on": "2026-01-08"
   },
   "problems": [
     {
@@ -6806,7 +6806,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-08"
     },
     {
       "slug": "snakes-and-ladders",
@@ -9784,10 +9784,11 @@
       "slug": "maximum-product-of-splitted-binary-tree",
       "title": "Maximum Product of Splitted Binary Tree",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-08"
     },
     {
       "slug": "jump-game-v",
@@ -15129,7 +15130,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-08"
     },
     {
       "slug": "range-frequency-queries",
@@ -16759,7 +16760,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-08"
     },
     {
       "slug": "sum-of-numbers-with-units-digit-k",
@@ -17075,7 +17076,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-08"
     },
     {
       "slug": "number-of-unique-subjects-taught-by-each-teacher",
@@ -19505,7 +19506,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-08"
     },
     {
       "slug": "maximum-or",
