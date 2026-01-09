@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-08"
+    "last_generated_on": "2026-01-09"
   },
   "problems": [
     {
@@ -1751,7 +1751,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-09"
     },
     {
       "slug": "happy-number",
@@ -4464,7 +4464,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-09"
     },
     {
       "slug": "triangle-judgement",
@@ -8995,7 +8995,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-09"
     },
     {
       "slug": "queens-that-can-attack-the-king",
@@ -10184,7 +10184,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-09"
     },
     {
       "slug": "create-target-array-in-the-given-order",
@@ -26273,7 +26273,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-09"
     },
     {
       "slug": "flip-square-submatrix-vertically",
