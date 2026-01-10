@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-09"
+    "last_generated_on": "2026-01-10"
   },
   "problems": [
     {
@@ -5284,7 +5284,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-10"
     },
     {
       "slug": "number-of-atoms",
@@ -5428,7 +5428,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-10"
     },
     {
       "slug": "min-cost-climbing-stairs",
@@ -11211,7 +11211,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-10"
     },
     {
       "slug": "minimum-suffix-flips",
@@ -15337,7 +15337,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-10"
     },
     {
       "slug": "adding-spaces-to-a-string",
@@ -22433,7 +22433,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-10"
     },
     {
       "slug": "minimum-number-of-operations-to-satisfy-conditions",
