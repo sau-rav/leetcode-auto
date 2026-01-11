@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-10"
+    "last_generated_on": "2026-01-11"
   },
   "problems": [
     {
@@ -5182,10 +5182,11 @@
       "slug": "minimum-ascii-delete-sum-for-two-strings",
       "title": "Minimum ASCII Delete Sum for Two Strings",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-11"
     },
     {
       "slug": "subarray-product-less-than-k",
@@ -8212,7 +8213,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-11"
     },
     {
       "slug": "insufficient-nodes-in-root-to-leaf-paths",
@@ -9355,7 +9356,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-11"
     },
     {
       "slug": "element-appearing-more-than-25-in-sorted-array",
@@ -14302,7 +14303,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-11"
     },
     {
       "slug": "remove-stones-to-minimize-the-total",
@@ -21154,7 +21155,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-11"
     },
     {
       "slug": "distribute-candies-among-children-i",
@@ -24887,7 +24888,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-11"
     },
     {
       "slug": "transform-array-by-parity",
