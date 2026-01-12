@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-11"
+    "last_generated_on": "2026-01-12"
   },
   "problems": [
     {
@@ -1417,7 +1417,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-12"
     },
     {
       "slug": "find-peak-element",
@@ -11699,7 +11699,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-12"
     },
     {
       "slug": "maximum-profit-of-operating-a-centennial-wheel",
@@ -21245,7 +21245,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-12"
     },
     {
       "slug": "maximum-xor-product",
@@ -24203,7 +24203,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-12"
     },
     {
       "slug": "minimum-operations-to-make-array-values-equal-to-k",
@@ -25752,7 +25752,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-12"
     },
     {
       "slug": "count-the-number-of-computer-unlocking-permutations",
