@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-12"
+    "last_generated_on": "2026-01-13"
   },
   "problems": [
     {
@@ -4554,7 +4554,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-13"
     },
     {
       "slug": "swap-sex-of-employees",
@@ -5366,7 +5366,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-13"
     },
     {
       "slug": "monotone-increasing-digits",
@@ -7970,7 +7970,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-13"
     },
     {
       "slug": "binary-search-tree-to-greater-sum-tree",
@@ -12194,7 +12194,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-13"
     },
     {
       "slug": "merge-in-between-linked-lists",
@@ -16148,7 +16148,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-13"
     },
     {
       "slug": "sum-of-scores-of-built-strings",
