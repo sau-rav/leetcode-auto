@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-13"
+    "last_generated_on": "2026-01-14"
   },
   "problems": [
     {
@@ -6348,7 +6348,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-14"
     },
     {
       "slug": "mirror-reflection",
@@ -8240,7 +8240,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-14"
     },
     {
       "slug": "duplicate-zeros",
@@ -13564,7 +13564,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-14"
     },
     {
       "slug": "incremental-memory-leak",
@@ -20120,7 +20120,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-14"
     },
     {
       "slug": "sum-of-squares-of-special-elements",
@@ -21939,7 +21939,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-14"
     },
     {
       "slug": "maximize-consecutive-elements-in-an-array-after-modification",
