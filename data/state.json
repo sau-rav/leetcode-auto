@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-14"
+    "last_generated_on": "2026-01-15"
   },
   "problems": [
     {
@@ -9050,7 +9050,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-15"
     },
     {
       "slug": "remove-sub-folders-from-the-filesystem",
@@ -9086,7 +9086,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-15"
     },
     {
       "slug": "circular-permutation-in-binary-representation",
@@ -19751,7 +19751,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-15"
     },
     {
       "slug": "sum-of-matrix-after-queries",
@@ -22849,7 +22849,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-15"
     },
     {
       "slug": "count-pairs-that-form-a-complete-day-i",
@@ -26049,7 +26049,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-15"
     },
     {
       "slug": "process-string-with-special-operations-ii",
