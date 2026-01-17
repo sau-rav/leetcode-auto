@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-16"
+    "last_generated_on": "2026-01-17"
   },
   "problems": [
     {
@@ -6186,7 +6186,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-17"
     },
     {
       "slug": "magic-squares-in-grid",
@@ -7997,7 +7997,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-17"
     },
     {
       "slug": "robot-bounded-in-circle",
@@ -13167,7 +13167,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-17"
     },
     {
       "slug": "number-of-orders-in-the-backlog",
@@ -24284,7 +24284,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-17"
     },
     {
       "slug": "maximize-amount-after-two-days-of-conversions",
@@ -24735,7 +24735,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-17"
     },
     {
       "slug": "assign-elements-to-groups-with-constraints",
