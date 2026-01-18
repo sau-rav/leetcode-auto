@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-17"
+    "last_generated_on": "2026-01-18"
   },
   "problems": [
     {
@@ -1823,7 +1823,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-18"
     },
     {
       "slug": "course-schedule-ii",
@@ -4104,7 +4104,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-18"
     },
     {
       "slug": "next-greater-element-iii",
@@ -5104,7 +5104,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-18"
     },
     {
       "slug": "insert-into-a-binary-search-tree",
@@ -10852,7 +10852,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-18"
     },
     {
       "slug": "running-sum-of-1d-array",
@@ -14912,10 +14912,11 @@
       "slug": "next-greater-numerically-balanced-number",
       "title": "Next Greater Numerically Balanced Number",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-18"
     },
     {
       "slug": "count-nodes-with-the-highest-score",
@@ -20849,7 +20850,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-18"
     },
     {
       "slug": "change-data-type",
@@ -21999,10 +22000,11 @@
       "slug": "find-the-largest-area-of-square-inside-two-rectangles",
       "title": "Find the Largest Area of Square Inside Two Rectangles",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": "2026-01-02"
+      "assigned_on": null,
+      "solved_on": "2026-01-18"
     },
     {
       "slug": "earliest-second-to-mark-indices-i",
