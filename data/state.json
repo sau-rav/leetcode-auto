@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-18"
+    "last_generated_on": "2026-01-19"
   },
   "problems": [
     {
@@ -3220,7 +3220,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-19"
     },
     {
       "slug": "non-overlapping-intervals",
@@ -4500,7 +4500,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-19"
     },
     {
       "slug": "not-boring-movies",
@@ -6546,7 +6546,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-19"
     },
     {
       "slug": "decoded-string-at-index",
@@ -10290,10 +10290,11 @@
       "slug": "circle-and-rectangle-overlapping",
       "title": "Circle and Rectangle Overlapping",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-19"
     },
     {
       "slug": "reducing-dishes",
@@ -12987,7 +12988,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-19"
     },
     {
       "slug": "car-fleet-ii",
@@ -13823,10 +13824,11 @@
       "slug": "largest-magic-square",
       "title": "Largest Magic Square",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": "2025-12-29"
+      "assigned_on": null,
+      "solved_on": "2026-01-19"
     },
     {
       "slug": "minimum-cost-to-change-the-final-value-of-expression",
@@ -25403,7 +25405,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-19"
     },
     {
       "slug": "path-existence-queries-in-a-graph-i",
@@ -25850,10 +25852,11 @@
       "slug": "find-maximum-area-of-a-triangle",
       "title": "Find Maximum Area of a Triangle",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-19"
     },
     {
       "slug": "count-prime-gap-balanced-subarrays",
