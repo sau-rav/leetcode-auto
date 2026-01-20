@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-19"
+    "last_generated_on": "2026-01-20"
   },
   "problems": [
     {
@@ -3996,7 +3996,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-20"
     },
     {
       "slug": "minimum-time-difference",
@@ -7573,7 +7573,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-20"
     },
     {
       "slug": "rotting-oranges",
@@ -9407,10 +9407,11 @@
       "slug": "maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold",
       "title": "Maximum Side Length of a Square with Sum Less than or Equal to Threshold",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-20"
     },
     {
       "slug": "shortest-path-in-a-grid-with-obstacles-elimination",
@@ -12772,7 +12773,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-20"
     },
     {
       "slug": "sum-of-unique-elements",
@@ -16917,7 +16918,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-20"
     },
     {
       "slug": "minimum-sum-of-squared-difference",
@@ -20492,7 +20493,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-20"
     },
     {
       "slug": "check-if-strings-can-be-made-equal-with-operations-ii",
