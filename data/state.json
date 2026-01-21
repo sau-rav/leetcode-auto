@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-20"
+    "last_generated_on": "2026-01-21"
   },
   "problems": [
     {
@@ -826,7 +826,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-21"
     },
     {
       "slug": "reverse-linked-list-ii",
@@ -7862,7 +7862,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-21"
     },
     {
       "slug": "maximum-difference-between-node-and-ancestor",
@@ -14873,7 +14873,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-21"
     },
     {
       "slug": "simple-bank-system",
@@ -15663,10 +15663,11 @@
       "slug": "keep-multiplying-found-values-by-two",
       "title": "Keep Multiplying Found Values by Two",
       "difficulty": "Easy",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-21"
     },
     {
       "slug": "all-divisions-with-the-highest-score-of-a-binary-array",
@@ -16387,7 +16388,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-21"
     },
     {
       "slug": "escape-the-spreading-fire",
@@ -23333,7 +23334,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-21"
     },
     {
       "slug": "find-the-power-of-k-size-subarrays-i",
@@ -23771,10 +23772,11 @@
       "slug": "construct-the-minimum-bitwise-array-i",
       "title": "Construct the Minimum Bitwise Array I",
       "difficulty": "Easy",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-21"
     },
     {
       "slug": "construct-the-minimum-bitwise-array-ii",
