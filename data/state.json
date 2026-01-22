@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-21"
+    "last_generated_on": "2026-01-22"
   },
   "problems": [
     {
@@ -5050,7 +5050,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-22"
     },
     {
       "slug": "max-area-of-island",
@@ -9365,7 +9365,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-22"
     },
     {
       "slug": "remove-covered-intervals",
@@ -18999,7 +18999,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-22"
     },
     {
       "slug": "find-the-longest-balanced-substring-of-a-binary-string",
@@ -21358,7 +21358,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-22"
     },
     {
       "slug": "count-complete-substrings",
@@ -22224,7 +22224,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-22"
     },
     {
       "slug": "most-frequent-ids",
@@ -23782,10 +23782,11 @@
       "slug": "construct-the-minimum-bitwise-array-ii",
       "title": "Construct the Minimum Bitwise Array II",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-22"
     },
     {
       "slug": "find-maximum-removals-from-source-string",
@@ -25252,10 +25253,11 @@
       "slug": "minimum-operations-to-make-array-sum-divisible-by-k",
       "title": "Minimum Operations to Make Array Sum Divisible by K",
       "difficulty": "Easy",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-22"
     },
     {
       "slug": "number-of-unique-xor-triplets-i",
