@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-22"
+    "last_generated_on": "2026-01-23"
   },
   "problems": [
     {
@@ -10105,7 +10105,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-23"
     },
     {
       "slug": "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree",
@@ -14216,7 +14216,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-23"
     },
     {
       "slug": "delete-duplicate-folders-in-system",
@@ -18630,7 +18630,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-23"
     },
     {
       "slug": "subsequence-with-the-minimum-score",
@@ -21052,7 +21052,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-23"
     },
     {
       "slug": "subarrays-distinct-element-sum-of-squares-i",
@@ -23307,7 +23307,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-23"
     },
     {
       "slug": "count-the-number-of-good-nodes",
@@ -25217,10 +25217,11 @@
       "slug": "minimum-pair-removal-to-sort-array-i",
       "title": "Minimum Pair Removal to Sort Array I",
       "difficulty": "Easy",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-23"
     },
     {
       "slug": "implement-router",
