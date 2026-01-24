@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-23"
+    "last_generated_on": "2026-01-24"
   },
   "problems": [
     {
@@ -5357,7 +5357,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-24"
     },
     {
       "slug": "parse-lisp-expression",
@@ -6681,7 +6681,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-24"
     },
     {
       "slug": "maximum-frequency-stack",
@@ -10971,7 +10971,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-24"
     },
     {
       "slug": "path-crossing",
@@ -19431,7 +19431,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-24"
     },
     {
       "slug": "allow-one-function-call",
@@ -25245,10 +25245,11 @@
       "slug": "minimum-pair-removal-to-sort-array-ii",
       "title": "Minimum Pair Removal to Sort Array II",
       "difficulty": "Hard",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-24"
     },
     {
       "slug": "minimum-operations-to-make-array-sum-divisible-by-k",
@@ -25294,7 +25295,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-24"
     },
     {
       "slug": "smallest-palindromic-rearrangement-i",
