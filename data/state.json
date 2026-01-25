@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-24"
+    "last_generated_on": "2026-01-25"
   },
   "problems": [
     {
@@ -2617,7 +2617,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-25"
     },
     {
       "slug": "reverse-vowels-of-a-string",
@@ -6636,7 +6636,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-25"
     },
     {
       "slug": "find-and-replace-pattern",
@@ -13690,10 +13690,11 @@
       "slug": "minimize-maximum-pair-sum-in-array",
       "title": "Minimize Maximum Pair Sum in Array",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-25"
     },
     {
       "slug": "get-biggest-three-rhombus-sums-in-a-grid",
@@ -17919,7 +17920,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-25"
     },
     {
       "slug": "convert-the-temperature",
@@ -20422,7 +20423,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-25"
     },
     {
       "slug": "determine-the-minimum-sum-of-a-k-avoiding-array",
@@ -21755,7 +21756,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-25"
     },
     {
       "slug": "minimum-number-of-pushes-to-type-word-ii",
