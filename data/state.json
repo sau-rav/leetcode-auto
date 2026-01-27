@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-26"
+    "last_generated_on": "2026-01-27"
   },
   "problems": [
     {
@@ -13802,7 +13802,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-27"
     },
     {
       "slug": "check-if-all-the-integers-in-a-range-are-covered",
@@ -17093,7 +17093,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-27"
     },
     {
       "slug": "make-array-zero-by-subtracting-equal-amounts",
@@ -22622,7 +22622,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-27"
     },
     {
       "slug": "maximum-difference-score-in-a-grid",
@@ -23390,7 +23390,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-27"
     },
     {
       "slug": "find-the-largest-palindrome-divisible-by-k",
@@ -24168,7 +24168,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-27"
     },
     {
       "slug": "smallest-number-with-all-set-bits",
