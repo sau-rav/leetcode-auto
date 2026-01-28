@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-27"
+    "last_generated_on": "2026-01-28"
   },
   "problems": [
     {
@@ -8858,10 +8858,11 @@
       "slug": "minimum-absolute-difference",
       "title": "Minimum Absolute Difference",
       "difficulty": "Easy",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-28"
     },
     {
       "slug": "ugly-number-iii",
@@ -9113,7 +9114,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-28"
     },
     {
       "slug": "minimum-swaps-to-make-strings-equal",
@@ -12043,7 +12044,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-28"
     },
     {
       "slug": "sell-diminishing-valued-colored-balls",
@@ -16534,7 +16535,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-28"
     },
     {
       "slug": "count-integers-in-intervals",
@@ -21676,7 +21677,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-28"
     },
     {
       "slug": "find-beautiful-indices-in-the-given-array-i",
@@ -26348,10 +26349,11 @@
       "slug": "minimum-cost-path-with-edge-reversals",
       "title": "Minimum Cost Path with Edge Reversals",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-28"
     },
     {
       "slug": "minimum-cost-path-with-teleportations",
@@ -26874,7 +26876,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-28"
     },
     {
       "slug": "longest-balanced-subarray-i",
