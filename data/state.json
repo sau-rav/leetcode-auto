@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-28"
+    "last_generated_on": "2026-01-29"
   },
   "problems": [
     {
@@ -13676,7 +13676,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-29"
     },
     {
       "slug": "substrings-of-size-three-with-distinct-characters",
@@ -14254,7 +14254,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-29"
     },
     {
       "slug": "count-number-of-special-subsequences",
@@ -16400,7 +16400,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-29"
     },
     {
       "slug": "remove-digit-from-number-to-maximize-result",
@@ -20749,7 +20749,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-29"
     },
     {
       "slug": "maximum-value-of-an-ordered-triplet-ii",
@@ -23899,7 +23899,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-29"
     },
     {
       "slug": "maximum-points-tourist-can-earn",
@@ -26359,10 +26359,11 @@
       "slug": "minimum-cost-path-with-teleportations",
       "title": "Minimum Cost Path with Teleportations",
       "difficulty": "Hard",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-29"
     },
     {
       "slug": "best-time-to-buy-and-sell-stock-using-strategy",
