@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-29"
+    "last_generated_on": "2026-01-30"
   },
   "problems": [
     {
@@ -781,7 +781,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-30"
     },
     {
       "slug": "scramble-string",
@@ -5068,7 +5068,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-30"
     },
     {
       "slug": "degree-of-an-array",
@@ -7609,7 +7609,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-30"
     },
     {
       "slug": "maximum-binary-tree-ii",
@@ -10567,7 +10567,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-30"
     },
     {
       "slug": "build-an-array-with-stack-operations",
@@ -17364,7 +17364,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-30"
     },
     {
       "slug": "maximum-rows-covered-by-columns",
@@ -21548,10 +21548,11 @@
       "slug": "minimum-cost-to-convert-string-i",
       "title": "Minimum Cost to Convert String I",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-30"
     },
     {
       "slug": "minimum-cost-to-convert-string-ii",
