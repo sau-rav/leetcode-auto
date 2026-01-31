@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-30"
+    "last_generated_on": "2026-01-31"
   },
   "problems": [
     {
@@ -6069,7 +6069,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-31"
     },
     {
       "slug": "making-a-large-island",
@@ -10016,7 +10016,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-31"
     },
     {
       "slug": "minimum-cost-to-make-at-least-one-valid-path-in-a-grid",
@@ -15525,7 +15525,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-31"
     },
     {
       "slug": "minimum-swaps-to-group-all-1s-together-ii",
@@ -20911,7 +20911,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-31"
     },
     {
       "slug": "divisible-and-non-divisible-sums-difference",
@@ -21488,7 +21488,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-01-31"
     },
     {
       "slug": "count-the-number-of-incremovable-subarrays-i",
@@ -21558,10 +21558,11 @@
       "slug": "minimum-cost-to-convert-string-ii",
       "title": "Minimum Cost to Convert String II",
       "difficulty": "Hard",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-01-31"
     },
     {
       "slug": "check-if-bitwise-or-has-trailing-zeros",
