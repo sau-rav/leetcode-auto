@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-01-31"
+    "last_generated_on": "2026-02-01"
   },
   "problems": [
     {
@@ -1892,10 +1892,11 @@
       "slug": "contains-duplicate",
       "title": "Contains Duplicate",
       "difficulty": "Easy",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-02-01"
     },
     {
       "slug": "the-skyline-problem",
@@ -2803,10 +2804,11 @@
       "slug": "insert-delete-getrandom-o1",
       "title": "Insert Delete GetRandom O(1)",
       "difficulty": "Medium",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-02-01"
     },
     {
       "slug": "insert-delete-getrandom-o1-duplicates-allowed",
@@ -3326,10 +3328,11 @@
       "slug": "find-all-numbers-disappeared-in-an-array",
       "title": "Find All Numbers Disappeared in an Array",
       "difficulty": "Easy",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-02-01"
     },
     {
       "slug": "serialize-and-deserialize-bst",
@@ -5417,10 +5420,11 @@
       "slug": "find-smallest-letter-greater-than-target",
       "title": "Find Smallest Letter Greater Than Target",
       "difficulty": "Easy",
-      "status": "pending",
+      "status": "solved",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": null,
+      "solved_on": "2026-02-01"
     },
     {
       "slug": "prefix-and-suffix-search",
@@ -8519,7 +8523,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-01"
     },
     {
       "slug": "stone-game-ii",
@@ -10404,7 +10408,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-01"
     },
     {
       "slug": "the-k-th-lexicographical-string-of-all-happy-strings-of-length-n",
@@ -11359,7 +11363,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-01"
     },
     {
       "slug": "minimum-operations-to-make-array-equal",
@@ -22616,7 +22620,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-01"
     },
     {
       "slug": "taking-maximum-energy-from-the-mystic-dungeon",
@@ -23077,7 +23081,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-01"
     },
     {
       "slug": "lexicographically-smallest-string-after-a-swap",
