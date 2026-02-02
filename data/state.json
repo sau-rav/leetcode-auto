@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-02-01"
+    "last_generated_on": "2026-02-02"
   },
   "problems": [
     {
@@ -538,7 +538,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-02"
     },
     {
       "slug": "permutation-sequence",
@@ -7812,7 +7812,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-02"
     },
     {
       "slug": "number-of-enclaves",
@@ -10354,7 +10354,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-02"
     },
     {
       "slug": "string-matching-in-an-array",
@@ -16809,7 +16809,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-02"
     },
     {
       "slug": "count-unreachable-pairs-of-nodes-in-an-undirected-graph",
@@ -25376,7 +25376,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-02"
     },
     {
       "slug": "find-the-most-common-response",
