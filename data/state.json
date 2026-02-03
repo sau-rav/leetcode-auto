@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-02-02"
+    "last_generated_on": "2026-02-03"
   },
   "problems": [
     {
@@ -754,7 +754,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-03"
     },
     {
       "slug": "largest-rectangle-in-histogram",
@@ -3872,7 +3872,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-03"
     },
     {
       "slug": "detect-capital",
@@ -10742,7 +10742,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-03"
     },
     {
       "slug": "cherry-pickup-ii",
@@ -14168,7 +14168,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-03"
     },
     {
       "slug": "the-number-of-the-smallest-unoccupied-chair",
@@ -17854,7 +17854,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-03"
     },
     {
       "slug": "apply-operations-to-an-array",
