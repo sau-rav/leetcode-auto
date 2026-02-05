@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-02-04"
+    "last_generated_on": "2026-02-05"
   },
   "problems": [
     {
@@ -2970,7 +2970,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-05"
     },
     {
       "slug": "evaluate-division",
@@ -4143,7 +4143,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-05"
     },
     {
       "slug": "subarray-sum-equals-k",
@@ -6766,7 +6766,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-05"
     },
     {
       "slug": "fruit-into-baskets",
@@ -9046,7 +9046,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-05"
     },
     {
       "slug": "check-if-it-is-a-straight-line",
@@ -19501,7 +19501,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-05"
     },
     {
       "slug": "number-of-senior-citizens",
