@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-02-07"
+    "last_generated_on": "2026-02-08"
   },
   "problems": [
     {
@@ -4485,7 +4485,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-08"
     },
     {
       "slug": "merge-two-binary-trees",
@@ -9461,7 +9461,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-08"
     },
     {
       "slug": "replace-elements-with-greatest-element-on-right-side",
@@ -13048,7 +13048,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-08"
     },
     {
       "slug": "minimum-elements-to-add-to-form-a-given-sum",
@@ -20546,7 +20546,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-08"
     },
     {
       "slug": "count-of-interesting-subarrays",
@@ -21284,7 +21284,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-08"
     },
     {
       "slug": "maximize-area-of-square-hole-in-grid",
