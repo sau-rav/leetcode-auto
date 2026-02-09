@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-02-08"
+    "last_generated_on": "2026-02-09"
   },
   "problems": [
     {
@@ -7595,7 +7595,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-09"
     },
     {
       "slug": "number-of-squareful-arrays",
@@ -18412,7 +18412,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-09"
     },
     {
       "slug": "count-the-number-of-good-subarrays",
@@ -21620,7 +21620,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-09"
     },
     {
       "slug": "minimum-number-of-operations-to-make-x-and-y-equal",
@@ -22945,7 +22945,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-09"
     },
     {
       "slug": "find-the-minimum-area-to-cover-all-ones-i",
@@ -24337,7 +24337,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-09"
     },
     {
       "slug": "count-paths-with-the-given-xor-value",
