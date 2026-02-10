@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-02-09"
+    "last_generated_on": "2026-02-10"
   },
   "problems": [
     {
@@ -4674,7 +4674,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-10"
     },
     {
       "slug": "set-mismatch",
@@ -7189,7 +7189,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-10"
     },
     {
       "slug": "flip-equivalent-binary-trees",
@@ -8793,7 +8793,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-10"
     },
     {
       "slug": "make-array-strictly-increasing",
@@ -14348,7 +14348,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-10"
     },
     {
       "slug": "number-of-strings-that-appear-as-substrings-in-word",
@@ -16205,7 +16205,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-10"
     },
     {
       "slug": "largest-number-after-digit-swaps-by-parity",
