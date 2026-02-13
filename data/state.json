@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-02-12"
+    "last_generated_on": "2026-02-13"
   },
   "problems": [
     {
@@ -1142,7 +1142,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-13"
     },
     {
       "slug": "word-ladder",
@@ -17548,7 +17548,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-13"
     },
     {
       "slug": "find-all-good-indices",
@@ -18295,7 +18295,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-13"
     },
     {
       "slug": "distinct-prime-factors-of-product-of-array",
@@ -19510,7 +19510,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-13"
     },
     {
       "slug": "sum-in-a-matrix",
@@ -23804,7 +23804,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-13"
     },
     {
       "slug": "find-the-number-of-possible-ways-for-an-event",
