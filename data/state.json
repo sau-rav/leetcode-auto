@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-02-13"
+    "last_generated_on": "2026-02-14"
   },
   "problems": [
     {
@@ -1615,7 +1615,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-14"
     },
     {
       "slug": "repeated-dna-sequences",
@@ -7162,7 +7162,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-14"
     },
     {
       "slug": "bag-of-tokens",
@@ -12039,7 +12039,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-14"
     },
     {
       "slug": "minimum-deletions-to-make-character-frequencies-unique",
@@ -15358,7 +15358,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-14"
     },
     {
       "slug": "number-of-smooth-descent-periods-of-a-stock",
@@ -15890,7 +15890,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-14"
     },
     {
       "slug": "minimum-number-of-steps-to-make-two-strings-anagram-ii",
