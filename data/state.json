@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-02-14"
+    "last_generated_on": "2026-02-15"
   },
   "problems": [
     {
@@ -9695,7 +9695,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-15"
     },
     {
       "slug": "break-a-palindrome",
@@ -12561,7 +12561,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-15"
     },
     {
       "slug": "number-of-ways-to-reconstruct-a-tree",
@@ -14213,7 +14213,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-15"
     },
     {
       "slug": "maximum-compatibility-score-sum",
@@ -19366,7 +19366,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-15"
     },
     {
       "slug": "find-the-prefix-common-array-of-two-arrays",
@@ -24626,7 +24626,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-15"
     },
     {
       "slug": "count-partitions-with-even-sum-difference",
