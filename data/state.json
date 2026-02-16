@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-02-15"
+    "last_generated_on": "2026-02-16"
   },
   "problems": [
     {
@@ -953,7 +953,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-16"
     },
     {
       "slug": "construct-binary-tree-from-inorder-and-postorder-traversal",
@@ -6415,7 +6415,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-16"
     },
     {
       "slug": "smallest-subtree-with-all-the-deepest-nodes",
@@ -11399,7 +11399,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-16"
     },
     {
       "slug": "minimum-number-of-vertices-to-reach-all-nodes",
@@ -17584,7 +17584,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-16"
     },
     {
       "slug": "bitwise-xor-of-all-pairings",
@@ -20816,7 +20816,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-16"
     },
     {
       "slug": "create-a-new-column",
