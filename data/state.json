@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-02-16"
+    "last_generated_on": "2026-02-17"
   },
   "problems": [
     {
@@ -4080,7 +4080,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-17"
     },
     {
       "slug": "student-attendance-record-ii",
@@ -13364,7 +13364,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-17"
     },
     {
       "slug": "maximum-xor-for-each-query",
@@ -17719,7 +17719,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-17"
     },
     {
       "slug": "count-number-of-distinct-integers-after-reverse-operations",
@@ -19664,7 +19664,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-17"
     },
     {
       "slug": "buy-two-chocolates",
@@ -22503,7 +22503,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-17"
     },
     {
       "slug": "find-the-integer-added-to-array-i",
