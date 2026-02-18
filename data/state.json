@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-02-17"
+    "last_generated_on": "2026-02-18"
   },
   "problems": [
     {
@@ -1507,7 +1507,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-18"
     },
     {
       "slug": "dungeon-game",
@@ -13138,7 +13138,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-18"
     },
     {
       "slug": "design-authentication-manager",
@@ -16701,7 +16701,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-18"
     },
     {
       "slug": "successful-pairs-of-spells-and-potions",
@@ -18052,7 +18052,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-18"
     },
     {
       "slug": "remove-nodes-from-linked-list",
@@ -19736,7 +19736,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-18"
     },
     {
       "slug": "timeout-cancellation",
