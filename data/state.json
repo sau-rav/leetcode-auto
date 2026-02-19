@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-02-18"
+    "last_generated_on": "2026-02-19"
   },
   "problems": [
     {
@@ -1088,7 +1088,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-19"
     },
     {
       "slug": "best-time-to-buy-and-sell-stock",
@@ -7911,7 +7911,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-19"
     },
     {
       "slug": "maximum-sum-of-two-non-overlapping-subarrays",
@@ -8226,7 +8226,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-19"
     },
     {
       "slug": "smallest-subsequence-of-distinct-characters",
@@ -13084,7 +13084,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-19"
     },
     {
       "slug": "check-if-one-string-swap-can-make-strings-equal",
@@ -14231,7 +14231,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-19"
     },
     {
       "slug": "three-divisors",
