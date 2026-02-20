@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-02-19"
+    "last_generated_on": "2026-02-20"
   },
   "problems": [
     {
@@ -15385,7 +15385,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-20"
     },
     {
       "slug": "find-all-possible-recipes-from-given-supplies",
@@ -16034,7 +16034,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-20"
     },
     {
       "slug": "maximize-number-of-subsequences-in-a-string",
@@ -20339,7 +20339,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-20"
     },
     {
       "slug": "maximum-elegance-of-a-k-length-subsequence",
@@ -22386,7 +22386,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-20"
     },
     {
       "slug": "find-the-number-of-subarrays-where-boundary-elements-are-maximum",
@@ -24058,7 +24058,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-20"
     },
     {
       "slug": "count-k-reducible-numbers-less-than-n",
