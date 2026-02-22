@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-02-21"
+    "last_generated_on": "2026-02-22"
   },
   "problems": [
     {
@@ -8253,7 +8253,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-22"
     },
     {
       "slug": "largest-values-from-labels",
@@ -12471,7 +12471,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-22"
     },
     {
       "slug": "maximum-number-of-eaten-apples",
@@ -14321,7 +14321,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-22"
     },
     {
       "slug": "minimum-number-of-swaps-to-make-the-string-balanced",
@@ -22467,7 +22467,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-22"
     },
     {
       "slug": "make-a-square-with-the-same-color",
@@ -26928,7 +26928,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-22"
     },
     {
       "slug": "minimum-operations-to-transform-array",
