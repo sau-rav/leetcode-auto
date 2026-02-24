@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-02-23"
+    "last_generated_on": "2026-02-24"
   },
   "problems": [
     {
@@ -17107,7 +17107,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-24"
     },
     {
       "slug": "maximum-number-of-groups-entering-a-competition",
@@ -21791,7 +21791,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-24"
     },
     {
       "slug": "find-the-maximum-number-of-elements-in-subset",
@@ -23887,7 +23887,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-24"
     },
     {
       "slug": "find-the-original-typed-string-i",
@@ -23914,7 +23914,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-24"
     },
     {
       "slug": "find-the-original-typed-string-ii",
@@ -26874,7 +26874,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-24"
     },
     {
       "slug": "smallest-missing-multiple-of-k",
