@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-02-25"
+    "last_generated_on": "2026-02-26"
   },
   "problems": [
     {
@@ -980,7 +980,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-26"
     },
     {
       "slug": "convert-sorted-list-to-binary-search-tree",
@@ -5830,7 +5830,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-26"
     },
     {
       "slug": "champagne-tower",
@@ -11291,7 +11291,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-26"
     },
     {
       "slug": "can-convert-string-in-k-moves",
@@ -12985,7 +12985,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-26"
     },
     {
       "slug": "equal-sum-arrays-with-minimum-number-of-operations",
@@ -22783,7 +22783,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-26"
     },
     {
       "slug": "find-subarray-with-bitwise-or-closest-to-k",
