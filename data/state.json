@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-02-27"
+    "last_generated_on": "2026-02-28"
   },
   "problems": [
     {
@@ -1705,7 +1705,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-28"
     },
     {
       "slug": "rising-temperature",
@@ -12805,7 +12805,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-28"
     },
     {
       "slug": "maximum-number-of-events-that-can-be-attended-ii",
@@ -18268,7 +18268,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-28"
     },
     {
       "slug": "maximum-tastiness-of-candy-basket",
@@ -22116,7 +22116,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-28"
     },
     {
       "slug": "maximize-happiness-of-selected-children",
@@ -26043,7 +26043,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-02-28"
     },
     {
       "slug": "find-overbooked-employees",
