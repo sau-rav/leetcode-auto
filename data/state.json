@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-02-28"
+    "last_generated_on": "2026-03-01"
   },
   "problems": [
     {
@@ -4512,7 +4512,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-01"
     },
     {
       "slug": "task-scheduler",
@@ -13780,7 +13780,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-01"
     },
     {
       "slug": "minimum-number-of-flips-to-make-the-binary-string-alternating",
@@ -18007,7 +18007,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-01"
     },
     {
       "slug": "difference-between-ones-and-zeros-in-row-and-column",
@@ -23117,7 +23117,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-01"
     },
     {
       "slug": "odd-and-even-transactions",
@@ -26793,7 +26793,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-01"
     },
     {
       "slug": "equal-score-substrings",
