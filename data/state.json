@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-03-01"
+    "last_generated_on": "2026-03-02"
   },
   "problems": [
     {
@@ -2276,7 +2276,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-02"
     },
     {
       "slug": "word-pattern",
@@ -5243,7 +5243,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-02"
     },
     {
       "slug": "longest-word-in-dictionary",
@@ -9740,7 +9740,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-02"
     },
     {
       "slug": "filter-restaurants-by-vegan-friendly-price-and-distance",
@@ -14051,7 +14051,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-02"
     },
     {
       "slug": "nearest-exit-from-entrance-in-maze",
@@ -15502,7 +15502,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-02"
     },
     {
       "slug": "longest-palindrome-by-concatenating-two-letter-words",
