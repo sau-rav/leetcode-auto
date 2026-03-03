@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-03-02"
+    "last_generated_on": "2026-03-03"
   },
   "problems": [
     {
@@ -592,7 +592,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-03"
     },
     {
       "slug": "plus-one",
@@ -4359,7 +4359,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-03"
     },
     {
       "slug": "big-countries",
@@ -17467,7 +17467,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-03"
     },
     {
       "slug": "maximum-matching-of-players-with-trainers",
@@ -17872,7 +17872,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-03"
     },
     {
       "slug": "total-cost-to-hire-k-workers",
@@ -20258,7 +20258,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-03"
     },
     {
       "slug": "shortest-string-that-contains-three-strings",
