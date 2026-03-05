@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-03-04"
+    "last_generated_on": "2026-03-05"
   },
   "problems": [
     {
@@ -4188,7 +4188,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-05"
     },
     {
       "slug": "reshape-the-matrix",
@@ -4233,7 +4233,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-05"
     },
     {
       "slug": "out-of-boundary-paths",
@@ -4873,7 +4873,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-05"
     },
     {
       "slug": "bulb-switcher-ii",
@@ -17170,7 +17170,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-05"
     },
     {
       "slug": "number-of-arithmetic-triplets",
@@ -24121,7 +24121,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-05"
     },
     {
       "slug": "zero-array-transformation-iii",
