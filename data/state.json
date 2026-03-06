@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-03-05"
+    "last_generated_on": "2026-03-06"
   },
   "problems": [
     {
@@ -1489,7 +1489,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-06"
     },
     {
       "slug": "factorial-trailing-zeroes",
@@ -13616,7 +13616,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-06"
     },
     {
       "slug": "finding-pairs-with-a-certain-sum",
@@ -18772,7 +18772,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-06"
     },
     {
       "slug": "count-ways-to-group-overlapping-ranges",
@@ -24265,7 +24265,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-06"
     },
     {
       "slug": "maximum-area-rectangle-with-point-constraints-i",
@@ -25220,7 +25220,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-06"
     },
     {
       "slug": "minimum-pair-removal-to-sort-array-i",
