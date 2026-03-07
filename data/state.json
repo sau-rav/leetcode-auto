@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-03-06"
+    "last_generated_on": "2026-03-07"
   },
   "problems": [
     {
@@ -40,7 +40,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-07"
     },
     {
       "slug": "longest-palindromic-substring",
@@ -3791,7 +3791,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-07"
     },
     {
       "slug": "fibonacci-number",
@@ -12543,7 +12543,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-07"
     },
     {
       "slug": "maximum-score-from-removing-substrings",
@@ -13943,7 +13943,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-07"
     },
     {
       "slug": "remove-all-occurrences-of-a-substring",
@@ -25394,7 +25394,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-07"
     },
     {
       "slug": "count-cells-in-overlapping-horizontal-and-vertical-substrings",
