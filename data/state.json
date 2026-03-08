@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-03-07"
+    "last_generated_on": "2026-03-08"
   },
   "problems": [
     {
@@ -1905,7 +1905,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-08"
     },
     {
       "slug": "contains-duplicate-ii",
@@ -7324,7 +7324,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-08"
     },
     {
       "slug": "vowel-spellchecker",
@@ -7486,7 +7486,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-08"
     },
     {
       "slug": "string-without-aaa-or-bbb",
@@ -11255,7 +11255,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-08"
     },
     {
       "slug": "find-the-winner-of-an-array-game",
@@ -13030,7 +13030,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-08"
     },
     {
       "slug": "count-pairs-of-nodes",
