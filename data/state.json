@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-03-09"
+    "last_generated_on": "2026-03-10"
   },
   "problems": [
     {
@@ -7135,7 +7135,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-10"
     },
     {
       "slug": "minimum-increment-to-make-array-unique",
@@ -7387,7 +7387,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-10"
     },
     {
       "slug": "k-closest-points-to-origin",
@@ -12075,7 +12075,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-10"
     },
     {
       "slug": "minimum-deletions-to-make-string-balanced",
@@ -15079,7 +15079,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-10"
     },
     {
       "slug": "maximum-number-of-tasks-you-can-assign",
@@ -20456,7 +20456,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-10"
     },
     {
       "slug": "furthest-point-from-origin",
