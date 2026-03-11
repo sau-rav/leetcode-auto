@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-03-10"
+    "last_generated_on": "2026-03-11"
   },
   "problems": [
     {
@@ -6208,7 +6208,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-11"
     },
     {
       "slug": "split-array-into-fibonacci-sequence",
@@ -21320,7 +21320,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-11"
     },
     {
       "slug": "count-beautiful-substrings-i",
@@ -25799,7 +25799,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-11"
     },
     {
       "slug": "find-consistently-improving-employees",
@@ -25935,7 +25935,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-11"
     },
     {
       "slug": "longest-common-prefix-between-adjacent-strings-after-removals",
@@ -26577,7 +26577,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-11"
     },
     {
       "slug": "minimum-discards-to-balance-inventory",
