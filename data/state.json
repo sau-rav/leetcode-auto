@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-03-13"
+    "last_generated_on": "2026-03-14"
   },
   "problems": [
     {
@@ -403,7 +403,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-14"
     },
     {
       "slug": "jump-game-ii",
@@ -6343,7 +6343,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-14"
     },
     {
       "slug": "minimum-cost-to-hire-k-workers",
@@ -7081,7 +7081,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-14"
     },
     {
       "slug": "minimum-area-rectangle",
@@ -13129,7 +13129,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-14"
     },
     {
       "slug": "second-largest-digit-in-a-string",
@@ -15574,7 +15574,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-14"
     },
     {
       "slug": "solving-questions-with-brainpower",
