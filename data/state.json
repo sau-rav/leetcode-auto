@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-03-15"
+    "last_generated_on": "2026-03-16"
   },
   "problems": [
     {
@@ -2645,7 +2645,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-16"
     },
     {
       "slug": "intersection-of-two-arrays-ii",
@@ -12552,7 +12552,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-16"
     },
     {
       "slug": "construct-the-lexicographically-largest-valid-sequence",
@@ -14366,7 +14366,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-16"
     },
     {
       "slug": "minimum-non-zero-product-of-the-array-elements",
@@ -19213,7 +19213,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-16"
     },
     {
       "slug": "promise-time-limit",
@@ -23667,7 +23667,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-16"
     },
     {
       "slug": "minimum-element-after-replacement-with-digit-sum",
