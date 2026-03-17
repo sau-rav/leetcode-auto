@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-03-16"
+    "last_generated_on": "2026-03-17"
   },
   "problems": [
     {
@@ -7423,7 +7423,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-17"
     },
     {
       "slug": "squares-of-a-sorted-array",
@@ -13671,7 +13671,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-17"
     },
     {
       "slug": "calculate-special-bonus",
@@ -20879,7 +20879,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-17"
     },
     {
       "slug": "reshape-data-concatenate",
@@ -22026,7 +22026,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-17"
     },
     {
       "slug": "earliest-second-to-mark-indices-ii",
@@ -26667,7 +26667,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-17"
     },
     {
       "slug": "maximum-total-subarray-value-ii",
