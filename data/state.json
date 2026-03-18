@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-03-17"
+    "last_generated_on": "2026-03-18"
   },
   "problems": [
     {
@@ -6739,7 +6739,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-18"
     },
     {
       "slug": "online-stock-span",
@@ -9894,7 +9894,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-18"
     },
     {
       "slug": "product-of-the-last-k-numbers",
@@ -11003,7 +11003,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-18"
     },
     {
       "slug": "max-value-of-equation",
@@ -12381,7 +12381,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-18"
     },
     {
       "slug": "daily-leads-and-partners",
@@ -25076,7 +25076,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-18"
     },
     {
       "slug": "closest-equal-element-queries",
