@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-03-18"
+    "last_generated_on": "2026-03-19"
   },
   "problems": [
     {
@@ -9307,7 +9307,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-19"
     },
     {
       "slug": "students-and-examinations",
@@ -19835,7 +19835,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-19"
     },
     {
       "slug": "is-object-empty",
@@ -19934,7 +19934,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-19"
     },
     {
       "slug": "special-permutations",
@@ -21501,7 +21501,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-19"
     },
     {
       "slug": "find-polygon-with-the-largest-perimeter",
@@ -24689,7 +24689,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-19"
     },
     {
       "slug": "reschedule-meetings-for-maximum-free-time-ii",
