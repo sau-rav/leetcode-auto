@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-03-19"
+    "last_generated_on": "2026-03-20"
   },
   "problems": [
     {
@@ -7622,7 +7622,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-20"
     },
     {
       "slug": "available-captures-for-rook",
@@ -12615,7 +12615,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-20"
     },
     {
       "slug": "tuple-with-same-product",
@@ -15052,7 +15052,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-20"
     },
     {
       "slug": "check-whether-two-strings-are-almost-equivalent",
@@ -19889,7 +19889,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-20"
     },
     {
       "slug": "lexicographically-smallest-string-after-substring-operation",
@@ -25085,7 +25085,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-20"
     },
     {
       "slug": "zero-array-transformation-iv",
