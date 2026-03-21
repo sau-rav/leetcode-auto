@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-03-20"
+    "last_generated_on": "2026-03-21"
   },
   "problems": [
     {
@@ -3909,7 +3909,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-21"
     },
     {
       "slug": "longest-word-in-dictionary-through-deleting",
@@ -12084,7 +12084,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-21"
     },
     {
       "slug": "minimum-jumps-to-reach-home",
@@ -18187,7 +18187,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-21"
     },
     {
       "slug": "smallest-value-after-replacing-with-sum-of-prime-factors",
@@ -23270,7 +23270,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-21"
     },
     {
       "slug": "design-neighbor-sum-service",
@@ -25493,7 +25493,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-21"
     },
     {
       "slug": "minimum-operations-to-convert-all-elements-to-zero",
