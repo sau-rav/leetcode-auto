@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-03-21"
+    "last_generated_on": "2026-03-22"
   },
   "problems": [
     {
@@ -7108,7 +7108,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-22"
     },
     {
       "slug": "di-string-match",
@@ -8388,7 +8388,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-22"
     },
     {
       "slug": "print-in-order",
@@ -10390,7 +10390,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-22"
     },
     {
       "slug": "minimum-value-to-get-positive-step-by-step-sum",
@@ -22161,7 +22161,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-22"
     },
     {
       "slug": "replace-question-marks-in-string-to-minimize-its-value",
@@ -22656,7 +22656,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-22"
     },
     {
       "slug": "special-array-ii",
