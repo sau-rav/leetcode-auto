@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-03-23"
+    "last_generated_on": "2026-03-24"
   },
   "problems": [
     {
@@ -1363,7 +1363,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-24"
     },
     {
       "slug": "reverse-words-in-a-string",
@@ -21428,7 +21428,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-24"
     },
     {
       "slug": "double-modular-exponentiation",
@@ -21863,7 +21863,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-24"
     },
     {
       "slug": "minimum-time-to-revert-word-to-initial-state-i",
@@ -24509,7 +24509,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-24"
     },
     {
       "slug": "zigzag-grid-traversal-with-skip",
@@ -25971,7 +25971,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-24"
     },
     {
       "slug": "hexadecimal-and-hexatrigesimal-conversion",
