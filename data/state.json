@@ -2,7 +2,7 @@
   "meta": {
     "initialized_on": "2025-12-26",
     "total_problems": 3040,
-    "last_generated_on": "2026-03-24"
+    "last_generated_on": "2026-03-25"
   },
   "problems": [
     {
@@ -12228,7 +12228,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-25"
     },
     {
       "slug": "richest-customer-wealth",
@@ -12417,7 +12417,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-25"
     },
     {
       "slug": "checking-existence-of-edge-length-limited-paths",
@@ -17755,7 +17755,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-25"
     },
     {
       "slug": "number-of-subarrays-with-gcd-equal-to-k",
@@ -18745,7 +18745,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-25"
     },
     {
       "slug": "minimum-time-to-visit-a-cell-in-a-grid",
@@ -24797,7 +24797,7 @@
       "status": "pending",
       "solve_later": false,
       "revision": false,
-      "assigned_on": null
+      "assigned_on": "2026-03-25"
     },
     {
       "slug": "separate-squares-i",
