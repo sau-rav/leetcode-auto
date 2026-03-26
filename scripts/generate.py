@@ -13,8 +13,8 @@ SOLVED_AFTER = datetime(2025, 12, 25)
 STATE_FILE = "data/state.json"
 GRAPHQL = "https://leetcode.com/graphql"
 
-DAILY_TARGET = 5
-DIFFICULTY_QUOTA = {"Easy": 2, "Medium": 2, "Hard": 1}
+DAILY_TARGET = 10
+DIFFICULTY_QUOTA = {"Medium": 7, "Hard": 3}
 
 HEADERS = {
     "Content-Type": "application/json",
@@ -150,7 +150,7 @@ def run():
 
     # ---- 5. FILL TO DAILY TARGET ----
     while len(new_assigned) + len(pending_today) < DAILY_TARGET:
-        for diff in ["Easy", "Medium", "Hard"]:
+        for diff in ["Medium", "Hard"]:
             if buckets[diff]:
                 new_assigned.append(buckets[diff].pop())
                 break

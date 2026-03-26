@@ -30,5 +30,5 @@ if not found:
 with open(STATE_FILE, "w") as f:
     json.dump(state, f, indent=2)
 
-print(f"Marked {slug} as solved")
+print(f"Marked {slug} as solve_later")
 

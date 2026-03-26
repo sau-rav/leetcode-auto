@@ -346,18 +346,9 @@
         p.assigned_on === today
       );
 
-      // 2️⃣ Fallback
-      if (allProblems.length === 0) {
-        allProblems = state.problems.filter(p =>
-          p.status === "pending" &&
-          !p.solve_later &&
-          p.assigned_on === null
-        );
-      }
-
       if (allProblems.length === 0) {
         list.innerHTML = `
-          <li class="empty">🎉 No pending problems available</li>
+          <li class="empty">No problems assigned for today yet — run the generator script.</li>
         `;
         document.getElementById("pagination").style.display = "none";
         return;
